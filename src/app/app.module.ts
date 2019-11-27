@@ -20,6 +20,13 @@ import { MetaLocationComponent } from './meta-location/meta-location.component';
 import { MetaTimeComponent } from './meta-time/meta-time.component';
 import { MetaDateComponent } from './meta-date/meta-date.component';
 import { MetaResolutionComponent } from './meta-resolution/meta-resolution.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { 
+  MatExpansionModule, 
+  MatCheckboxModule,
+  MatFormFieldModule,
+  MatIconModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -44,7 +51,12 @@ import { MetaResolutionComponent } from './meta-resolution/meta-resolution.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatExpansionModule, 
+    MatCheckboxModule,
+    MatFormFieldModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
