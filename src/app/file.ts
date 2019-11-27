@@ -1,7 +1,7 @@
-export class File {
+export class CustomFile {
     "name": string;
-    "date": Date;
+    "date": string;
     "location": string;
-    "x-resolution": string;
-    "y-resolution": string;
+    "x-resolution": number;
+    "y-resolution": number;
 }
