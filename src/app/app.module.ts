@@ -16,10 +16,7 @@ import { AddBeginendComponent } from './add-beginend/add-beginend.component';
 import { AddPositionComponent } from './add-position/add-position.component';
 import { AddBeforeafterComponent } from './add-beforeafter/add-beforeafter.component';
 import { AddCounterComponent } from './add-counter/add-counter.component';
-import { MetaLocationComponent } from './meta-location/meta-location.component';
-import { MetaTimeComponent } from './meta-time/meta-time.component';
-import { MetaDateComponent } from './meta-date/meta-date.component';
-import { MetaResolutionComponent } from './meta-resolution/meta-resolution.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -36,15 +33,12 @@ import { MetaResolutionComponent } from './meta-resolution/meta-resolution.compo
     AddBeginendComponent,
     AddPositionComponent,
     AddBeforeafterComponent,
-    AddCounterComponent,
-    MetaLocationComponent,
-    MetaTimeComponent,
-    MetaDateComponent,
-    MetaResolutionComponent
+    AddCounterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
