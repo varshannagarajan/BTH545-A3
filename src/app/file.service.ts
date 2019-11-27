@@ -5,6 +5,10 @@ import mockFiles from '../assets/MOCK_DATA.json';
   providedIn: 'root'
 })
 export class FileService {
-  files: File[];
-  constructor() { }
+  originalFiles: File[];
+  modifiedFiles: File[];
+  constructor() {
+    this.originalFiles = [...mockFiles];
+    this.modifiedFiles = [];
+  }
 }
