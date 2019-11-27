@@ -1,0 +1,1896 @@
+.mediaViewInfo {
+	--web-view-name: BTH545;
+	--web-view-id: BTH545;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: BTH545;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+.BTH545_Class {
+	position: absolute;
+	background: #E5E5E5;
+	width: 1920px;
+	height: 1080px;
+	background-color: rgba(95,101,117,1);
+	overflow: hidden;
+	--web-view-name: BTH545;
+	--web-view-id: BTH545;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+.Line_2 {
+	overflow: visible;
+	position: absolute;
+	width: 18.997px;
+	height: 17.121px;
+	left: 1884.5px;
+	top: 11.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Line_3 {
+	overflow: visible;
+	position: absolute;
+	width: 18.997px;
+	height: 17.121px;
+	left: 1884.5px;
+	top: 11.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Line_124 {
+	overflow: visible;
+	position: absolute;
+	width: 18.997px;
+	height: 17.121px;
+	left: 1884.5px;
+	top: 11.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Line_125 {
+	overflow: visible;
+	position: absolute;
+	width: 18.997px;
+	height: 17.121px;
+	left: 1884.5px;
+	top: 11.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Ellipse_40 {
+	position: absolute;
+	overflow: visible;
+	width: 3px;
+	height: 3px;
+	left: 1190px;
+	top: 1059px;
+}
+.Rectangle_619_Class {
+	position: absolute;
+	width: 1920px;
+	height: 49px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(228,228,228,1);
+	border:  1px solid rgba(228,228,228,1);
+	overflow: hidden;
+}
+.Line_207 {
+	overflow: visible;
+	position: absolute;
+	width: 5px;
+	height: 1050.006px;
+	left: 731.5px;
+	top: 49.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Rectangle_620_Class {
+	position: absolute;
+	width: 732px;
+	height: 53px;
+	left: 0px;
+	top: 49px;
+	background-color: rgba(61,60,72,1);
+	border:  3px solid rgba(193,207,223,1);
+	overflow: hidden;
+}
+.Rectangle_621_Class {
+	position: absolute;
+	width: 138px;
+	height: 39px;
+	left: 555px;
+	top: 56px;
+	background-color: rgba(255,255,255,1);
+	border-radius: 13px 13px 13px 13px;
+	border:  3px solid rgba(195,208,222,1);
+	overflow: hidden;
+}
+.APPLY__Class {
+	position: absolute;
+	left: 588px;
+	top: 63px;
+	overflow: visible;
+	width: 79px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(95,101,117,1);
+}
+ 
+.Select_All_Class {
+	position: absolute;
+	left: 78px;
+	top: 71px;
+	overflow: visible;
+	width: 85px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(228,228,228,1);
+}
+
+
+.Path_180 {
+	overflow: visible;
+	position: absolute;
+	width: 725.482px;
+	height: 30px;
+	left: 750.518px;
+	top: 61px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_769_Class {
+	position: absolute;
+	width: 33px;
+	height: 30px;
+	left: 1476px;
+	top: 61px;
+	overflow: visible;
+}
+.Rectangle_6_Class {
+	position: absolute;
+	width: 33px;
+	height: 30px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(255,255,255,1);
+	border:  1px solid rgba(112,112,112,1);
+	overflow: hidden;
+}
+.Line_5 {
+	overflow: visible;
+	position: absolute;
+	width: 10.109px;
+	height: 7.664px;
+	left: 8.5px;
+	top: 11.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_16 {
+	overflow: visible;
+	position: absolute;
+	width: 10.109px;
+	height: 7.664px;
+	left: 16.5px;
+	top: 11.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Rectangle_624_Class {
+	position: absolute;
+	width: 178px;
+	height: 30px;
+	left: 1514px;
+	top: 61px;
+	background-color: rgba(255,255,255,1);
+	border:  1px solid rgba(112,112,112,1);
+	overflow: hidden;
+}
+.Group_770_Class {
+	position: absolute;
+	width: 25.5px;
+	height: 16.5px;
+	left: 1660.5px;
+	top: 70px;
+	overflow: visible;
+}
+.Ellipse_1 {
+	position: absolute;
+	overflow: visible;
+	width: 18px;
+	height: 15px;
+	left: 7.5px;
+	top: 0px;
+}
+.Line_4 {
+	overflow: visible;
+	position: absolute;
+	width: 9.971px;
+	height: 6.748px;
+	left: 0px;
+	top: 11.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_181 {
+	overflow: visible;
+	position: absolute;
+	width: 941.482px;
+	height: 866.285px;
+	left: 750.518px;
+	top: 163px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Repeat_Grid_82_Class {
+	position: absolute;
+	width: 195px;
+	height: 140px;
+	left: 1708px;
+	top: 216px;
+	overflow: hidden;
+}
+.Repeat_Grid_82_0_Class {
+	position: absolute;
+	width: 195px;
+	height: 37px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_625_Class {
+	position: absolute;
+	width: 195px;
+	height: 37px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(0,0,0,0);
+	border-radius: 13px 13px 13px 13px;
+	border:  1px solid rgba(193,207,223,1);
+	overflow: hidden;
+}
+.Repeat_Grid_82_1_Class {
+	position: absolute;
+	width: 195px;
+	height: 37px;
+	left: 0px;
+	top: 47px;
+	overflow: visible;
+}
+.Rectangle_625_Class {
+	position: absolute;
+	width: 195px;
+	height: 37px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(0,0,0,0);
+	border-radius: 13px 13px 13px 13px;
+	border:  1px solid rgba(193,207,223,1);
+	overflow: hidden;
+}
+.Repeat_Grid_82_2_Class {
+	position: absolute;
+	width: 195px;
+	height: 37px;
+	left: 0px;
+	top: 94px;
+	overflow: visible;
+}
+.Rectangle_625_Class {
+	position: absolute;
+	width: 195px;
+	height: 37px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(0,0,0,0);
+	border-radius: 13px 13px 13px 13px;
+	border:  1px solid rgba(193,207,223,1);
+	overflow: hidden;
+}
+.Group_771_Class {
+	position: absolute;
+	width: 195px;
+	height: 37px;
+	left: 1708px;
+	top: 171px;
+	overflow: visible;
+}
+.Rectangle_19_Class {
+	position: absolute;
+	width: 195px;
+	height: 37px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(255,255,255,1);
+	border-radius: 13px 13px 13px 13px;
+	border:  1px solid rgba(193,207,223,1);
+	overflow: hidden;
+}
+.Desktop_Class {
+	position: absolute;
+	left: 52px;
+	top: 6px;
+	overflow: visible;
+	width: 92px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(95,101,117,1);
+}
+.Repeat_Grid_83_Class {
+	position: absolute;
+	width: 32px;
+	height: 277px;
+	left: 1708px;
+	top: 474px;
+	overflow: hidden;
+}
+.Repeat_Grid_83_0_Class {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_626_Class {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(95,101,117,1);
+	border:  2px solid rgba(193,207,223,1);
+	overflow: hidden;
+}
+.Repeat_Grid_83_1_Class {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	left: 0px;
+	top: 59px;
+	overflow: visible;
+}
+.Rectangle_626_Class {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(95,101,117,1);
+	border:  2px solid rgba(193,207,223,1);
+	overflow: hidden;
+}
+.Repeat_Grid_83_2_Class {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	left: 0px;
+	top: 118px;
+	overflow: visible;
+}
+.Rectangle_626_Class {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(95,101,117,1);
+	border:  2px solid rgba(193,207,223,1);
+	overflow: hidden;
+}
+.Repeat_Grid_83_3_Class {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	left: 0px;
+	top: 177px;
+	overflow: visible;
+}
+.Rectangle_626_Class {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(95,101,117,1);
+	border:  2px solid rgba(193,207,223,1);
+	overflow: hidden;
+}
+.Repeat_Grid_83_4_Class {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	left: 0px;
+	top: 236px;
+	overflow: visible;
+}
+.Rectangle_626_Class {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(95,101,117,1);
+	border:  2px solid rgba(193,207,223,1);
+	overflow: hidden;
+}
+.Select_All_Class {
+	position: absolute;
+	left: 1749px;
+	top: 483px;
+	overflow: visible;
+	width: 85px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(228,228,228,1);
+}
+.Show_Folders_Class {
+	position: absolute;
+	left: 1746px;
+	top: 539px;
+	overflow: visible;
+	width: 122px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(228,228,228,1);
+}
+.Show_Files_Class {
+	position: absolute;
+	left: 1746px;
+	top: 599px;
+	overflow: visible;
+	width: 97px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(228,228,228,1);
+}
+.Rename_Files_in_Folders_Class {
+	position: absolute;
+	left: 1745px;
+	top: 650px;
+	overflow: hidden;
+	width: 195px;
+	height: 50px;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(228,228,228,1);
+}
+.Filter_by_File_Type_Class {
+	position: absolute;
+	left: 1745px;
+	top: 721px;
+	overflow: visible;
+	width: 153px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(228,228,228,1);
+}
+.Rectangle_627_Class {
+	position: absolute;
+	width: 165px;
+	height: 33px;
+	left: 1710px;
+	top: 754px;
+	background-color: rgba(95,101,117,1);
+	border-radius: 10px 10px 10px 10px;
+	border:  3px solid rgba(182,194,210,1);
+	overflow: hidden;
+}
+.Downloads_Class {
+	position: absolute;
+	left: 1749px;
+	top: 222px;
+	overflow: visible;
+	width: 125px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(255,255,255,1);
+}
+.______Documents_Class {
+	position: absolute;
+	left: 1723px;
+	top: 270px;
+	overflow: visible;
+	width: 153px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(255,255,255,1);
+}
+.Pictures_Class {
+	position: absolute;
+	left: 1759px;
+	top: 318px;
+	overflow: visible;
+	width: 94px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(255,255,255,1);
+}
+.Path_182 {
+	overflow: visible;
+	position: absolute;
+	width: 5.5px;
+	height: 866.508px;
+	left: 1129px;
+	top: 162px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Repeat_Grid_84_Class {
+	position: absolute;
+	width: 26px;
+	height: 344px;
+	left: 778px;
+	top: 207px;
+	overflow: hidden;
+}
+.Repeat_Grid_84_0_Class {
+	position: absolute;
+	width: 26px;
+	height: 25px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_628_Class {
+	position: absolute;
+	width: 26px;
+	height: 25px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(95,101,117,1);
+	border:  2px solid rgba(193,207,223,1);
+	overflow: hidden;
+}
+.Repeat_Grid_84_1_Class {
+	position: absolute;
+	width: 26px;
+	height: 25px;
+	left: 0px;
+	top: 51px;
+	overflow: visible;
+}
+.Rectangle_628_Class {
+	position: absolute;
+	width: 26px;
+	height: 25px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(95,101,117,1);
+	border:  2px solid rgba(193,207,223,1);
+	overflow: hidden;
+}
+.Repeat_Grid_84_2_Class {
+	position: absolute;
+	width: 26px;
+	height: 25px;
+	left: 0px;
+	top: 102px;
+	overflow: visible;
+}
+.Rectangle_628_Class {
+	position: absolute;
+	width: 26px;
+	height: 25px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(95,101,117,1);
+	border:  2px solid rgba(193,207,223,1);
+	overflow: hidden;
+}
+.Repeat_Grid_84_3_Class {
+	position: absolute;
+	width: 26px;
+	height: 25px;
+	left: 0px;
+	top: 153px;
+	overflow: visible;
+}
+.Rectangle_628_Class {
+	position: absolute;
+	width: 26px;
+	height: 25px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(95,101,117,1);
+	border:  2px solid rgba(193,207,223,1);
+	overflow: hidden;
+}
+.Repeat_Grid_84_4_Class {
+	position: absolute;
+	width: 26px;
+	height: 25px;
+	left: 0px;
+	top: 204px;
+	overflow: visible;
+}
+.Rectangle_628_Class {
+	position: absolute;
+	width: 26px;
+	height: 25px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(95,101,117,1);
+	border:  2px solid rgba(193,207,223,1);
+	overflow: hidden;
+}
+.Repeat_Grid_84_5_Class {
+	position: absolute;
+	width: 26px;
+	height: 25px;
+	left: 0px;
+	top: 255px;
+	overflow: visible;
+}
+.Rectangle_628_Class {
+	position: absolute;
+	width: 26px;
+	height: 25px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(95,101,117,1);
+	border:  2px solid rgba(193,207,223,1);
+	overflow: hidden;
+}
+.Repeat_Grid_84_6_Class {
+	position: absolute;
+	width: 26px;
+	height: 25px;
+	left: 0px;
+	top: 306px;
+	overflow: visible;
+}
+.Rectangle_628_Class {
+	position: absolute;
+	width: 26px;
+	height: 25px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(95,101,117,1);
+	border:  2px solid rgba(193,207,223,1);
+	overflow: hidden;
+}
+.test_html_Class {
+	position: absolute;
+	left: 816px;
+	top: 208px;
+	overflow: hidden;
+	width: 113px;
+	height: 18px;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(193,207,223,1);
+}
+.google_exe_Class {
+	position: absolute;
+	left: 816px;
+	top: 258px;
+	overflow: hidden;
+	width: 121px;
+	height: 18px;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(193,207,223,1);
+}
+.study_txt_Class {
+	position: absolute;
+	left: 816px;
+	top: 311px;
+	overflow: hidden;
+	width: 113px;
+	height: 18px;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(193,207,223,1);
+}
+.money_cvs_Class {
+	position: absolute;
+	left: 816px;
+	top: 361px;
+	overflow: hidden;
+	width: 126px;
+	height: 18px;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(193,207,223,1);
+}
+.Photo_bmp_Class {
+	position: absolute;
+	left: 816px;
+	top: 411px;
+	overflow: hidden;
+	width: 126px;
+	height: 18px;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(193,207,223,1);
+}
+.Group_772_Class {
+	position: absolute;
+	width: 25.015px;
+	height: 32px;
+	left: 816px;
+	top: 456px;
+	overflow: visible;
+}
+.Rectangle_23_Class {
+	position: absolute;
+	width: 23px;
+	height: 32px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(95,101,117,1);
+	border-radius: 3px 3px 3px 3px;
+	border:  2px solid rgba(154,171,191,1);
+	overflow: hidden;
+}
+.Path_4 {
+	overflow: visible;
+	position: absolute;
+	width: 8.766px;
+	height: 15.429px;
+	left: 18.249px;
+	top: 18.036px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_722_Class {
+	position: absolute;
+	width: 25.015px;
+	height: 32px;
+	left: 816px;
+	top: 508px;
+	overflow: visible;
+}
+.Rectangle_23_Class {
+	position: absolute;
+	width: 23px;
+	height: 32px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(95,101,117,1);
+	border-radius: 3px 3px 3px 3px;
+	border:  2px solid rgba(154,171,191,1);
+	overflow: hidden;
+}
+.Path_4 {
+	overflow: visible;
+	position: absolute;
+	width: 8.766px;
+	height: 15.429px;
+	left: 18.249px;
+	top: 18.036px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.New_Folder_Class {
+	position: absolute;
+	left: 852px;
+	top: 465px;
+	overflow: hidden;
+	width: 142px;
+	height: 18px;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(193,207,223,1);
+}
+.New_Folder_A_Class {
+	position: absolute;
+	left: 852px;
+	top: 518px;
+	overflow: hidden;
+	width: 163px;
+	height: 18px;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(193,207,223,1);
+}
+.View_File_Extensions_Class {
+	position: absolute;
+	left: 764px;
+	top: 122px;
+	overflow: visible;
+	width: 182px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(228,228,228,1);
+}
+.Group_773_Class {
+	position: absolute;
+	width: 58px;
+	height: 33px;
+	left: 960px;
+	top: 114px;
+	overflow: visible;
+}
+.Path_19 {
+	overflow: visible;
+	position: absolute;
+	width: 57px;
+	height: 33px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.ON_Class {
+	position: absolute;
+	left: 5px;
+	top: 9px;
+	overflow: visible;
+	width: 25px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: rgba(228,228,228,1);
+}
+.Ellipse_11 {
+	position: absolute;
+	overflow: visible;
+	width: 29px;
+	height: 33px;
+	left: 29px;
+	top: 0px;
+}
+.Rectangle_629_Class {
+	position: absolute;
+	width: 33px;
+	height: 39px;
+	left: 1067px;
+	top: 104px;
+	background-color: rgba(61,60,72,1);
+	border-radius: 12px 12px 12px 12px;
+	border:  2px solid rgba(143,168,196,1);
+	overflow: hidden;
+}
+.Rectangle_630_Class {
+	position: absolute;
+	width: 33px;
+	height: 39px;
+	left: 1059px;
+	top: 114px;
+	background-color: rgba(61,60,72,1);
+	border-radius: 12px 12px 12px 12px;
+	border:  2px solid rgba(143,168,196,1);
+	overflow: hidden;
+}
+.Copy__Class {
+	position: absolute;
+	left: 1110px;
+	top: 128px;
+	overflow: visible;
+	width: 48px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(228,228,228,1);
+}
+.Rectangle_631_Class {
+	position: absolute;
+	width: 33px;
+	height: 39px;
+	left: 1164px;
+	top: 103px;
+	background-color: rgba(61,60,72,1);
+	border-radius: 12px 12px 12px 12px;
+	border:  2px solid rgba(143,168,196,1);
+	overflow: hidden;
+}
+.Rectangle_632_Class {
+	position: absolute;
+	width: 33px;
+	height: 39px;
+	left: 1186px;
+	top: 109px;
+	background-color: rgba(61,60,72,1);
+	border-radius: 12px 12px 12px 12px;
+	border:  2px solid rgba(143,168,196,1);
+	overflow: hidden;
+}
+.Polygon_103 {
+	overflow: visible;
+	position: absolute;
+	width: 15px;
+	height: 10px;
+	transform: matrix(1,0,0,1,1189.5107,122.208) rotate(90deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Line_208 {
+	overflow: visible;
+	position: absolute;
+	width: 25.384px;
+	height: 3.369px;
+	left: 1175.5px;
+	top: 127.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Polygon_104 {
+	overflow: visible;
+	position: absolute;
+	width: 15px;
+	height: 10px;
+	transform: matrix(1,0,0,1,1189.5107,122.208) rotate(90deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Line_209 {
+	overflow: visible;
+	position: absolute;
+	width: 25.384px;
+	height: 3.369px;
+	left: 1175.5px;
+	top: 127.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Move_to_Class {
+	position: absolute;
+	left: 1231px;
+	top: 128px;
+	overflow: visible;
+	width: 69px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(228,228,228,1);
+}
+.Rectangle_633_Class {
+	position: absolute;
+	width: 141px;
+	height: 36px;
+	left: 1540px;
+	top: 113px;
+	background-color: rgba(255,255,255,1);
+	border-radius: 18px 18px 18px 18px;
+	border:  1px solid rgba(193,207,223,1);
+	overflow: hidden;
+}
+.Rectangle_634_Class {
+	position: absolute;
+	width: 70px;
+	height: 36px;
+	left: 1611px;
+	top: 113px;
+	background-color: rgba(61,60,72,1);
+	border-radius: 0px 18px 18px 0px;
+	border:  1px solid rgba(193,207,223,1);
+	overflow: hidden;
+}
+.List_Class {
+	position: absolute;
+	left: 1566px;
+	top: 121px;
+	overflow: visible;
+	width: 34px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(95,101,117,1);
+}
+.Icon_Class {
+	position: absolute;
+	left: 1627px;
+	top: 121px;
+	overflow: visible;
+	width: 39px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Rectangle_635_Class {
+	position: absolute;
+	width: 141px;
+	height: 36px;
+	left: 1540px;
+	top: 113px;
+	background-color: rgba(255,255,255,1);
+	border-radius: 18px 18px 18px 18px;
+	border:  1px solid rgba(193,207,223,1);
+	overflow: hidden;
+}
+.Rectangle_636_Class {
+	position: absolute;
+	width: 70px;
+	height: 36px;
+	left: 1611px;
+	top: 113px;
+	background-color: rgba(61,60,72,1);
+	border-radius: 0px 18px 18px 0px;
+	border:  1px solid rgba(193,207,223,1);
+	overflow: hidden;
+}
+.List_Class {
+	position: absolute;
+	left: 1566px;
+	top: 121px;
+	overflow: visible;
+	width: 34px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(95,101,117,1);
+}
+.Icon_Class {
+	position: absolute;
+	left: 1627px;
+	top: 121px;
+	overflow: visible;
+	width: 39px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.undo_Class {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 1742px;
+	top: 61px;
+	overflow: visible;
+}
+.Group_774_Class {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 1818px;
+	top: 61px;
+	overflow: visible;
+}
+.history_white_192x192 {
+	position: absolute;
+	overflow: visible;
+	width: 50px;
+	height: 50px;
+	left: 0px;
+	top: 0px;
+}
+.history_white_192x192_2H_Class {
+	position: absolute;
+	width: 47.111px;
+	height: 48px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.History_Class {
+	position: absolute;
+	left: 1810px;
+	top: 122px;
+	overflow: visible;
+	width: 66px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Undo_Class {
+	position: absolute;
+	left: 1746px;
+	top: 121px;
+	overflow: visible;
+	width: 47px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Bahnschrift;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Line_210 {
+	overflow: visible;
+	position: absolute;
+	width: 23px;
+	height: 1.5px;
+	left: 1783.5px;
+	top: 28.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Line_211 {
+	overflow: visible;
+	position: absolute;
+	width: 18.997px;
+	height: 17.121px;
+	left: 1877.5px;
+	top: 18.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Line_212 {
+	overflow: visible;
+	position: absolute;
+	width: 18.997px;
+	height: 17.121px;
+	left: 1877.5px;
+	top: 18.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Rectangle_637_Class {
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	left: 1835px;
+	top: 17px;
+	background-color: rgba(228,228,228,1);
+	border:  1px solid rgba(87,87,87,1);
+	overflow: hidden;
+}
+.Line_213 {
+	overflow: visible;
+	position: absolute;
+	width: 23px;
+	height: 1.5px;
+	left: 1783.5px;
+	top: 28.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Line_214 {
+	overflow: visible;
+	position: absolute;
+	width: 18.997px;
+	height: 17.121px;
+	left: 1877.5px;
+	top: 18.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Line_215 {
+	overflow: visible;
+	position: absolute;
+	width: 18.997px;
+	height: 17.121px;
+	left: 1877.5px;
+	top: 18.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Rectangle_638_Class {
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	left: 1835px;
+	top: 17px;
+	background-color: rgba(228,228,228,1);
+	border:  1px solid rgba(87,87,87,1);
+	overflow: hidden;
+}
+.Repeat_Grid_85_Class {
+	position: absolute;
+	width: 23px;
+	height: 214px;
+	left: 672px;
+	top: 102px;
+	overflow: hidden;
+}
+.Repeat_Grid_85_0_Class {
+	position: absolute;
+	width: 22px;
+	height: 49px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.x_1F_Class {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 23px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Century Gothic;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(247,137,136,1);
+}
+.Repeat_Grid_85_1_Class {
+	position: absolute;
+	width: 22px;
+	height: 49px;
+	left: 0px;
+	top: 54px;
+	overflow: visible;
+}
+.x_1G_Class {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 23px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Century Gothic;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(247,137,136,1);
+}
+.Repeat_Grid_85_2_Class {
+	position: absolute;
+	width: 22px;
+	height: 49px;
+	left: 0px;
+	top: 108px;
+	overflow: visible;
+}
+.x_1H_Class {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 23px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Century Gothic;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(247,137,136,1);
+}
+.Repeat_Grid_85_3_Class {
+	position: absolute;
+	width: 22px;
+	height: 49px;
+	left: 0px;
+	top: 162px;
+	overflow: visible;
+}
+.x_1I_Class {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 23px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Century Gothic;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(247,137,136,1);
+}
+.Repeat_Grid_86_Class {
+	position: absolute;
+	width: 23px;
+	height: 214px;
+	left: 672px;
+	top: 102px;
+	overflow: hidden;
+}
+.Repeat_Grid_86_0_Class {
+	position: absolute;
+	width: 22px;
+	height: 49px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.x_1F_Class {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 23px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Century Gothic;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(247,137,136,1);
+}
+.Repeat_Grid_86_1_Class {
+	position: absolute;
+	width: 22px;
+	height: 49px;
+	left: 0px;
+	top: 54px;
+	overflow: visible;
+}
+.x_1G_Class {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 23px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Century Gothic;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(247,137,136,1);
+}
+.Repeat_Grid_86_2_Class {
+	position: absolute;
+	width: 22px;
+	height: 49px;
+	left: 0px;
+	top: 108px;
+	overflow: visible;
+}
+.x_1H_Class {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 23px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Century Gothic;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(247,137,136,1);
+}
+.Repeat_Grid_86_3_Class {
+	position: absolute;
+	width: 22px;
+	height: 49px;
+	left: 0px;
+	top: 162px;
+	overflow: visible;
+}
+.x_1I_Class {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 23px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Century Gothic;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(247,137,136,1);
+}
+.Repeat_Grid_87_Class {
+	position: absolute;
+	width: 25px;
+	height: 216px;
+	left: 671px;
+	top: 644px;
+	overflow: hidden;
+}
+.Repeat_Grid_87_0_Class {
+	position: absolute;
+	width: 24px;
+	height: 49px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.__Class {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 25px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Century Gothic;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(139,209,78,1);
+}
+.Repeat_Grid_87_1_Class {
+	position: absolute;
+	width: 24px;
+	height: 49px;
+	left: 0px;
+	top: 55px;
+	overflow: visible;
+}
+.__1K_Class {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 25px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Century Gothic;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(139,209,78,1);
+}
+.Repeat_Grid_87_2_Class {
+	position: absolute;
+	width: 24px;
+	height: 49px;
+	left: 0px;
+	top: 110px;
+	overflow: visible;
+}
+.__1L_Class {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 25px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Century Gothic;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(139,209,78,1);
+}
+.Repeat_Grid_87_3_Class {
+	position: absolute;
+	width: 24px;
+	height: 49px;
+	left: 0px;
+	top: 165px;
+	overflow: visible;
+}
+.__1M_Class {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 25px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Century Gothic;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(139,209,78,1);
+}
+._____Class {
+	position: absolute;
+	left: 669px;
+	top: 333px;
+	overflow: visible;
+	width: 31px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Century Gothic;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(176,176,176,1);
+}
+.Repeat_Grid_88_Class {
+	position: absolute;
+	width: 27.856px;
+	height: 201.437px;
+	left: 670.07px;
+	top: 873.892px;
+	overflow: hidden;
+}
+.Repeat_Grid_88_0_Class {
+	position: absolute;
+	width: 26.38px;
+	height: 23.989px;
+	left: 0.694px;
+	top: 0.753px;
+	overflow: visible;
+}
+.Path_101 {
+	overflow: visible;
+	position: absolute;
+	width: 13.712px;
+	height: 22.571px;
+	transform: translate(-670.764px, -874.645px) matrix(1,0,0,1,677.0986,875.354) rotate(56deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Ellipse_38 {
+	position: absolute;
+	overflow: visible;
+	width: 5px;
+	height: 5px;
+	left: 15.236px;
+	top: 6.355px;
+}
+.Repeat_Grid_88_1_Class {
+	position: absolute;
+	width: 26.38px;
+	height: 23.989px;
+	left: 0.694px;
+	top: 54.753px;
+	overflow: visible;
+}
+.Path_101 {
+	overflow: visible;
+	position: absolute;
+	width: 13.712px;
+	height: 22.571px;
+	transform: translate(-670.764px, -874.645px) matrix(1,0,0,1,677.0986,875.354) rotate(56deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Ellipse_38 {
+	position: absolute;
+	overflow: visible;
+	width: 5px;
+	height: 5px;
+	left: 15.236px;
+	top: 6.355px;
+}
+.Repeat_Grid_88_2_Class {
+	position: absolute;
+	width: 26.38px;
+	height: 23.989px;
+	left: 0.694px;
+	top: 108.753px;
+	overflow: visible;
+}
+.Path_101 {
+	overflow: visible;
+	position: absolute;
+	width: 13.712px;
+	height: 22.571px;
+	transform: translate(-670.764px, -874.645px) matrix(1,0,0,1,677.0986,875.354) rotate(56deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Ellipse_38 {
+	position: absolute;
+	overflow: visible;
+	width: 5px;
+	height: 5px;
+	left: 15.236px;
+	top: 6.355px;
+}
+.Repeat_Grid_88_3_Class {
+	position: absolute;
+	width: 26.38px;
+	height: 23.989px;
+	left: 0.694px;
+	top: 162.753px;
+	overflow: visible;
+}
+.Path_101 {
+	overflow: visible;
+	position: absolute;
+	width: 13.712px;
+	height: 22.571px;
+	transform: translate(-670.764px, -874.645px) matrix(1,0,0,1,677.0986,875.354) rotate(56deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Ellipse_38 {
+	position: absolute;
+	overflow: visible;
+	width: 5px;
+	height: 5px;
+	left: 15.236px;
+	top: 6.355px;
+}
+.Repeat_Grid_93_Class {
+	position: absolute;
+	width: 32px;
+	height: 249px;
+	left: 667.011px;
+	top: 387.708px;
+	overflow: hidden;
+}
+.Repeat_Grid_93_0_Class {
+	position: absolute;
+	width: 32px;
+	height: 26px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Polygon_3 {
+	overflow: visible;
+	position: absolute;
+	width: 15px;
+	height: 10px;
+	transform: translate(-667.011px, -387.708px) matrix(1,0,0,1,686.5107,390.2075) rotate(90deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Line_120 {
+	overflow: visible;
+	position: absolute;
+	width: 25.384px;
+	height: 3.369px;
+	left: 5.489px;
+	top: 7.792px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Polygon_76 {
+	overflow: visible;
+	position: absolute;
+	width: 15px;
+	height: 10px;
+	transform: translate(-667.011px, -387.708px) matrix(1,0,0,1,664.5107,401.208) rotate(270deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Line_13 {
+	overflow: visible;
+	position: absolute;
+	width: 26px;
+	height: 3px;
+	left: 5.489px;
+	top: 18.792px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Repeat_Grid_93_1_Class {
+	position: absolute;
+	width: 32px;
+	height: 26px;
+	left: 0px;
+	top: 54px;
+	overflow: visible;
+}
+.Polygon_3 {
+	overflow: visible;
+	position: absolute;
+	width: 15px;
+	height: 10px;
+	transform: translate(-667.011px, -387.708px) matrix(1,0,0,1,686.5107,390.2075) rotate(90deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Line_120 {
+	overflow: visible;
+	position: absolute;
+	width: 25.384px;
+	height: 3.369px;
+	left: 5.489px;
+	top: 7.792px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Polygon_76 {
+	overflow: visible;
+	position: absolute;
+	width: 15px;
+	height: 10px;
+	transform: translate(-667.011px, -387.708px) matrix(1,0,0,1,664.5107,401.208) rotate(270deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Line_13 {
+	overflow: visible;
+	position: absolute;
+	width: 26px;
+	height: 3px;
+	left: 5.489px;
+	top: 18.792px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Repeat_Grid_93_2_Class {
+	position: absolute;
+	width: 32px;
+	height: 26px;
+	left: 0px;
+	top: 108px;
+	overflow: visible;
+}
+.Polygon_3 {
+	overflow: visible;
+	position: absolute;
+	width: 15px;
+	height: 10px;
+	transform: translate(-667.011px, -387.708px) matrix(1,0,0,1,686.5107,390.2075) rotate(90deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Line_120 {
+	overflow: visible;
+	position: absolute;
+	width: 25.384px;
+	height: 3.369px;
+	left: 5.489px;
+	top: 7.792px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Polygon_76 {
+	overflow: visible;
+	position: absolute;
+	width: 15px;
+	height: 10px;
+	transform: translate(-667.011px, -387.708px) matrix(1,0,0,1,664.5107,401.208) rotate(270deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Line_13 {
+	overflow: visible;
+	position: absolute;
+	width: 26px;
+	height: 3px;
+	left: 5.489px;
+	top: 18.792px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Repeat_Grid_93_3_Class {
+	position: absolute;
+	width: 32px;
+	height: 26px;
+	left: 0px;
+	top: 162px;
+	overflow: visible;
+}
+.Polygon_3 {
+	overflow: visible;
+	position: absolute;
+	width: 15px;
+	height: 10px;
+	transform: translate(-667.011px, -387.708px) matrix(1,0,0,1,686.5107,390.2075) rotate(90deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Line_120 {
+	overflow: visible;
+	position: absolute;
+	width: 25.384px;
+	height: 3.369px;
+	left: 5.489px;
+	top: 7.792px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Polygon_76 {
+	overflow: visible;
+	position: absolute;
+	width: 15px;
+	height: 10px;
+	transform: translate(-667.011px, -387.708px) matrix(1,0,0,1,664.5107,401.208) rotate(270deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Line_13 {
+	overflow: visible;
+	position: absolute;
+	width: 26px;
+	height: 3px;
+	left: 5.489px;
+	top: 18.792px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Repeat_Grid_93_4_Class {
+	position: absolute;
+	width: 32px;
+	height: 26px;
+	left: 0px;
+	top: 216px;
+	overflow: visible;
+}
+.Polygon_3 {
+	overflow: visible;
+	position: absolute;
+	width: 15px;
+	height: 10px;
+	transform: translate(-667.011px, -387.708px) matrix(1,0,0,1,686.5107,390.2075) rotate(90deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Line_120 {
+	overflow: visible;
+	position: absolute;
+	width: 25.384px;
+	height: 3.369px;
+	left: 5.489px;
+	top: 7.792px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Polygon_76 {
+	overflow: visible;
+	position: absolute;
+	width: 15px;
+	height: 10px;
+	transform: translate(-667.011px, -387.708px) matrix(1,0,0,1,664.5107,401.208) rotate(270deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Line_13 {
+	overflow: visible;
+	position: absolute;
+	width: 26px;
+	height: 3px;
+	left: 5.489px;
+	top: 18.792px;
+	transform: matrix(1,0,0,1,0,0);
+}
