@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { RemoveNumwordsComponent } from './remove-numwords/remove-numwords.component';
 import { RemoveBeginendComponent } from './remove-beginend/remove-beginend.component';
 import { RemovePositionComponent } from './remove-position/remove-position.component';
@@ -20,13 +21,17 @@ import { MetaLocationComponent } from './meta-location/meta-location.component';
 import { MetaTimeComponent } from './meta-time/meta-time.component';
 import { MetaDateComponent } from './meta-date/meta-date.component';
 import { MetaResolutionComponent } from './meta-resolution/meta-resolution.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { 
-  MatExpansionModule, 
+import {
+  MatExpansionModule,
   MatCheckboxModule,
   MatFormFieldModule,
-  MatIconModule
+  MatIconModule,
+  MatInputModule
 } from '@angular/material';
+import { DisplayOriginalComponent } from './display-original/display-original.component';
+import { DisplayModifiedComponent } from './display-modified/display-modified.component';
 
 @NgModule({
   declarations: [
@@ -47,16 +52,19 @@ import {
     MetaLocationComponent,
     MetaTimeComponent,
     MetaDateComponent,
-    MetaResolutionComponent
+    MetaResolutionComponent,
+    DisplayOriginalComponent,
+    DisplayModifiedComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatExpansionModule, 
+    MatExpansionModule,
     MatCheckboxModule,
     MatFormFieldModule,
-    MatIconModule
+    MatIconModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
