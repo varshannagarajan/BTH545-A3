@@ -1,23 +1,27 @@
-<mat-expansion-panel>
-  <mat-expansion-panel-header>
-    <mat-panel-title>
-      Add Before/After
-    </mat-panel-title>
-    <mat-panel-description>
-      Text to be added before/after
-      <!--<mat-icon>account_circle</mat-icon>-->
-    </mat-panel-description>
-  </mat-expansion-panel-header>
-
-  <mat-form-field>
-    <input matInput placeholder="Added Text" class="inputValue" />
-  </mat-form-field>
-  <mat-checkbox>Before</mat-checkbox>
-  <mat-checkbox>After</mat-checkbox>
-  <mat-checkbox>Filename</mat-checkbox>
-  <mat-checkbox>Extentsion</mat-checkbox>
-
-  <mat-action-row>
-    <button mat-button>Apply</button>
-  </mat-action-row>
-</mat-expansion-panel>
+<div class="addbeforeafter">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Add Before/After
+      </mat-panel-title>
+      <mat-panel-description>
+        Text to be added before/after
+        <mat-icon>account_circle</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-action-row>
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+            <mat-form-field>
+                <input matInput placeholder="Added Text" class="textToBeChanged">
+            </mat-form-field>
+            <button>Submit</button>
+        </form>
+      
+  
+      <mat-checkbox>Before</mat-checkbox>
+      <mat-checkbox>After</mat-checkbox>
+      <mat-checkbox>Filename</mat-checkbox>
+      <mat-checkbox>Extentsion</mat-checkbox>
+    </mat-action-row>
+  </mat-expansion-panel>
+</div>
