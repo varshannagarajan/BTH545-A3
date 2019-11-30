@@ -10,6 +10,6 @@ export class FileService {
   modifiedFiles: CustomFile[];
   constructor() {
     this.originalFiles = [...mockFiles];
-    this.modifiedFiles = [];
+    this.modifiedFiles = [...mockFiles];
   }
 }
