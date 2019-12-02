@@ -1,1 +1,12 @@
-<p>display-modified works!</p>
+<table class="table-dark table-hover">
+    <thead>
+      <tr>
+        <th>Modified File Name</th>
+      </tr>
+    </thead>
+    <tbody class="tableBody">
+        <tr *ngFor="let f of files">
+          <td>{{ f.name }}</td>
+        </tr>
+    </tbody>
+  </table>

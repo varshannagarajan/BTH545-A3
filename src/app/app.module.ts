@@ -28,7 +28,9 @@ import {
   MatCheckboxModule,
   MatFormFieldModule,
   MatIconModule,
-  MatInputModule
+  MatInputModule,
+  MatButtonModule,
+  MatSlideToggleModule
 } from '@angular/material';
 import { DisplayOriginalComponent } from './display-original/display-original.component';
 import { DisplayModifiedComponent } from './display-modified/display-modified.component';
@@ -66,7 +68,9 @@ import { FormsModule } from '@angular/forms';
     MatCheckboxModule,
     MatFormFieldModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    MatButtonModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
