@@ -32,6 +32,7 @@ import {
 } from '@angular/material';
 import { DisplayOriginalComponent } from './display-original/display-original.component';
 import { DisplayModifiedComponent } from './display-modified/display-modified.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { DisplayModifiedComponent } from './display-modified/display-modified.co
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     BrowserAnimationsModule,
     MatExpansionModule,
     MatCheckboxModule,

@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 import { CustomFile } from '../file';
 import { FileService } from '../file.service';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-add-beforeafter',
@@ -28,39 +29,34 @@ export class AddBeforeafterComponent implements OnInit {
 
   ngOnInit() {
     this.ogFiles = this.m.originalFiles;
+    this.modFiles = [];
+    this.textToAdd = '';
+    this.text = '';
     this.before = false;
     this.after = false;
   }
 
-  OnSubmit(){
+  onSubmit(f: NgForm){
     
     for(let i = 0; i < this.ogFiles.length; i++){
-      let textPosition = this.ogFiles[i].name.search(this.text);
+      let textPosition = this.ogFiles[i].name.indexOf(this.text);
+      let temp = this.ogFiles[i].name;
       if(textPosition != -1){
-        let dotPosition = this.ogFiles[i].name.search('.');
-        let temp = this.ogFiles[i].name;
-        if(this.ext && dotPosition < textPosition){
-          if(this.before){
-            temp = this.ogFiles[i].name.slice(0, dotPosition) + this.ogFiles[i].name.slice(dotPosition + 1, textPosition) + this.textToAdd + this.ogFiles[i].name.slice(textPosition + 1, (this.ogFiles[i].name.length - 1));
-          }
-          else if(this.after){
-            temp = this.ogFiles[i].name.slice(0, dotPosition) + this.ogFiles[i].name.slice(dotPosition + 1, textPosition + this.textToAdd.length) + this.textToAdd + this.ogFiles[i].name.slice(textPosition + this.textToAdd.length, (this.ogFiles[i].name.length - 1));
-          }
+        if(this.before){
+          temp = this.ogFiles[i].name.slice(0, textPosition) + this.textToAdd + this.ogFiles[i].name.slice(textPosition, (this.ogFiles[i].name.length - 1));
         }
         else{
-          if(this.before){
-            temp = this.ogFiles[i].name.slice(0, textPosition) + this.textToAdd + this.ogFiles[i].name.slice(textPosition + 1, (this.ogFiles[i].name.length - 1));
-          }
-          else if(this.after){
-            temp = this.ogFiles[i].name.slice(0, textPosition + this.textToAdd.length) + this.textToAdd + this.ogFiles[i].name.slice(textPosition + this.textToAdd.length, (this.ogFiles[i].name.length - 1))
-          }
+          temp = this.ogFiles[i].name.slice(0, textPosition+this.text.length) + this.textToAdd + this.ogFiles[i].name.slice(textPosition+this.text.length, (this.ogFiles[i].name.length - 1));
         }
-        var modFile = this.ogFiles[i];
-        modFile.name = temp;
-        this.modFiles.push(modFile);
+        
       }
-      this.m.modifiedFiles = this.modFiles;
+      var modFile = this.ogFiles[i];
+      modFile.name = temp;
+      this.modFiles.push(modFile);
     }
+    this.m.modifiedFiles = this.modFiles;
+    console.log(this.m.modifiedFiles);
+    
   }
 
 }

@@ -8,13 +8,16 @@
       <mat-icon>icon</mat-icon>
     </mat-panel-description>
   </mat-expansion-panel-header>
-
-  <mat-form-field>
-    <input matInput placeholder="Text" class="inputValue" />
-  </mat-form-field>
-  <mat-checkbox>Checkbox</mat-checkbox>
-
   <mat-action-row>
-    <button mat-button>Apply</button>
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+      <mat-form-field>
+          <input matInput placeholder="Enter Text to be Added: " [(ngModel)]="text"  [ngModelOptions]="{standalone: true}"  class="textToBeChanged">
+      </mat-form-field>
+      <mat-checkbox [(ngModel)]="before"  [ngModelOptions]="{standalone: true}">Before</mat-checkbox>
+      <mat-checkbox [(ngModel)]="after"  [ngModelOptions]="{standalone: true}">After</mat-checkbox>
+      <mat-checkbox [(ngModel)]="filename"  [ngModelOptions]="{standalone: true}">Filename</mat-checkbox>
+      <mat-checkbox [(ngModel)]="ext"  [ngModelOptions]="{standalone: true}">Extension</mat-checkbox>
+      <button type="submit">Submit</button>
+    </form>
   </mat-action-row>
 </mat-expansion-panel>
