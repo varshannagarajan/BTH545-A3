@@ -13,50 +13,40 @@ export class AddCounterComponent implements OnInit {
 
   modFiles: CustomFile[];
   text: string;
-  before: Boolean;
-  after: Boolean;
+  beforeOrAfter: boolean;
   padding: string;
 
   constructor(
-    private route: ActivatedRoute,
-    private m: FileService,
-    private router: Router
+    private m: FileService
   ) { }
 
   ngOnInit() {
     this.modFiles = [];
-    this.before = false;
-    this.after = false;
+    this.beforeOrAfter = true;
     this.padding = '0';
   }
 
   padZeros(num, size) {
-    var s = num+"";
-    while (s.length < size) s = "0" + s;
+    var s = num + '';
+    while (s.length < size) s = '0' + s;
     return s;
 }
 
-  onSubmit(f:NgForm){
+  onSubmit(f:NgForm) {
     var pad = parseInt(this.padding);
-    console.log(this.after);
-    for(let i = 0; i < this.m.modifiedFiles.length; i++){
-      
-      let dotPosition = this.m.modifiedFiles[i].name.indexOf(".");
-      console.log(dotPosition);
+    for(let i = 0; i < this.m.modifiedFiles.length; i++) {
+      let dotPosition = this.m.modifiedFiles[i].name.indexOf('.');
       var temp = this.m.modifiedFiles[i].name;
-      if (dotPosition != -1){
-        if(this.before){
+      if (dotPosition != -1) {
+        if(this.beforeOrAfter) {
           temp = '' + this.padZeros(i,pad) + this.m.modifiedFiles[i].name;
-        }
-        else{
+        } else {
           temp = '' + this.m.modifiedFiles[i].name.slice(0, dotPosition) + this.padZeros(i,pad) + this.m.modifiedFiles[i].name.slice(dotPosition, this.m.modifiedFiles[i].name.length-1);
         }
-      }
-      else{
-        if(this.before){
+      } else {
+        if(this.beforeOrAfter) {
           temp = '' + this.padZeros(i,pad) + this.m.modifiedFiles[i].name;
-        }
-        else{
+        } else {
           temp = this.m.modifiedFiles[i].name + this.padZeros(i,pad);
         }
       }
@@ -64,7 +54,6 @@ export class AddCounterComponent implements OnInit {
       modFile.name = temp;
       this.modFiles.push(modFile);
     }
-   
     this.m.modifiedFiles = this.modFiles;
     console.log(this.m.modifiedFiles);
   }

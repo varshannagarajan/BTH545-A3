@@ -14,43 +14,36 @@ export class AddBeginendComponent implements OnInit {
   ogFiles: CustomFile[];
   modFiles: CustomFile[];
   text: string;
-  before: Boolean;
-  after: Boolean;
+  beforeOrAfter: boolean;
   filename: Boolean;
   ext: Boolean;
 
   constructor(
-    private route: ActivatedRoute,
-    private m: FileService,
-    private router: Router
+    private m: FileService
   ) { }
 
   ngOnInit() {
     this.modFiles = [];
     this.text = '';
-    this.before = false;
-    this.after = false;
+    this.beforeOrAfter = true;
     this.filename = false;
     this.ext = false;
   }
 
-  onSubmit(f:NgForm){
-    for(let i = 0; i < this.m.modifiedFiles.length; i++){
+  onSubmit(f: NgForm) {
+    for (let i = 0; i < this.m.modifiedFiles.length; i++) {
       let dotPosition = this.m.modifiedFiles[i].name.indexOf(".");
       let temp = this.m.modifiedFiles[i].name;
-      if(this.ext){
-        if(this.before){
-          temp = this.m.modifiedFiles[i].name.slice(0, dotPosition+1) + this.text + this.m.modifiedFiles[i].name.slice(dotPosition+1, (this.m.modifiedFiles[i].name.length - 1));
-        }
-        else if(this.after){
+      if (this.ext) {
+        if (this.beforeOrAfter) {
+          temp = this.m.modifiedFiles[i].name.slice(0, dotPosition + 1) + this.text + this.m.modifiedFiles[i].name.slice(dotPosition + 1, (this.m.modifiedFiles[i].name.length - 1));
+        } else {
           temp =  this.m.modifiedFiles[i].name + this.text;
         }
-      }
-      else{
-        if(this.before){
+      } else {
+        if (this.beforeOrAfter) {
           temp = this.text + this.m.modifiedFiles[i].name;
-        }
-        else if(this.after){
+        } else {
           temp = this.m.modifiedFiles[i].name.slice(0, dotPosition) + this.text + this.m.modifiedFiles[i].name.slice(dotPosition, (this.m.modifiedFiles[i].name.length - 1));
         }
       }

@@ -18,12 +18,13 @@
         class="textToBeChanged"
       />
     </mat-form-field>
-    <mat-checkbox [(ngModel)]="before" [ngModelOptions]="{ standalone: true }"
-      >Before</mat-checkbox
+    <mat-radio-group
+      [(ngModel)]="beforeOrAfter"
+      [ngModelOptions]="{ standalone: true }"
     >
-    <mat-checkbox [(ngModel)]="after" [ngModelOptions]="{ standalone: true }"
-      >After</mat-checkbox
-    >
+      <mat-radio-button [value]="true">Beginnning</mat-radio-button>
+      <mat-radio-button [value]="false">Ending</mat-radio-button>
+    </mat-radio-group>
     <mat-checkbox [(ngModel)]="filename" [ngModelOptions]="{ standalone: true }"
       >Filename</mat-checkbox
     >
