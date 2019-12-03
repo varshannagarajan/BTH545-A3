@@ -8,14 +8,24 @@
       <mat-icon>icon</mat-icon>
     </mat-panel-description>
   </mat-expansion-panel-header>
-  <mat-action-row>
-    <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
-      <mat-form-field>
-          <input matInput placeholder="Counter: " [(ngModel)]="padding"  [ngModelOptions]="{standalone: true}"  class="textToBeChanged">
-      </mat-form-field>
-      <mat-checkbox [(ngModel)]="before"  [ngModelOptions]="{standalone: true}">Before</mat-checkbox>
-      <mat-checkbox [(ngModel)]="after"  [ngModelOptions]="{standalone: true}">After</mat-checkbox>
-      <button type="submit">Submit</button>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Counter: "
+        [(ngModel)]="padding"
+        [ngModelOptions]="{ standalone: true }"
+        class="textToBeChanged"
+      />
+    </mat-form-field>
+    <mat-checkbox [(ngModel)]="before" [ngModelOptions]="{ standalone: true }"
+      >Before</mat-checkbox
+    >
+    <mat-checkbox [(ngModel)]="after" [ngModelOptions]="{ standalone: true }"
+      >After</mat-checkbox
+    >
+    <mat-action-row>
+      <button mat-button type="submit">Submit</button>
+    </mat-action-row>
   </form>
-</mat-action-row>
 </mat-expansion-panel>
