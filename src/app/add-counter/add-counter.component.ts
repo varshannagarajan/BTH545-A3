@@ -11,7 +11,6 @@ import { NgForm } from '@angular/forms';
 })
 export class AddCounterComponent implements OnInit {
 
-  ogFiles: CustomFile[];
   modFiles: CustomFile[];
   text: string;
   before: Boolean;
@@ -25,7 +24,6 @@ export class AddCounterComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.ogFiles = this.m.originalFiles;
     this.modFiles = [];
     this.before = false;
     this.after = false;
@@ -41,28 +39,28 @@ export class AddCounterComponent implements OnInit {
   onSubmit(f:NgForm){
     var pad = parseInt(this.padding);
     console.log(this.after);
-    for(let i = 0; i < this.ogFiles.length; i++){
+    for(let i = 0; i < this.m.modifiedFiles.length; i++){
       
-      let dotPosition = this.ogFiles[i].name.indexOf(".");
+      let dotPosition = this.m.modifiedFiles[i].name.indexOf(".");
       console.log(dotPosition);
-      var temp = this.ogFiles[i].name;
+      var temp = this.m.modifiedFiles[i].name;
       if (dotPosition != -1){
         if(this.before){
-          temp = '' + this.padZeros(i,pad) + this.ogFiles[i].name;
+          temp = '' + this.padZeros(i,pad) + this.m.modifiedFiles[i].name;
         }
         else{
-          temp = '' + this.ogFiles[i].name.slice(0, dotPosition) + this.padZeros(i,pad) + this.ogFiles[i].name.slice(dotPosition, this.ogFiles[i].name.length-1);
+          temp = '' + this.m.modifiedFiles[i].name.slice(0, dotPosition) + this.padZeros(i,pad) + this.m.modifiedFiles[i].name.slice(dotPosition, this.m.modifiedFiles[i].name.length-1);
         }
       }
       else{
         if(this.before){
-          temp = '' + this.padZeros(i,pad) + this.ogFiles[i].name;
+          temp = '' + this.padZeros(i,pad) + this.m.modifiedFiles[i].name;
         }
         else{
-          temp = this.ogFiles[i].name + this.padZeros(i,pad);
+          temp = this.m.modifiedFiles[i].name + this.padZeros(i,pad);
         }
       }
-      var modFile = this.ogFiles[i];
+      var modFile = this.m.modifiedFiles[i];
       modFile.name = temp;
       this.modFiles.push(modFile);
     }

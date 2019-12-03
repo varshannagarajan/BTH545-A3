@@ -25,7 +25,6 @@ export class AddPositionComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.ogFiles = this.m.originalFiles;
     this.modFiles = [];
     this.before = false;
     this.after = false;
@@ -34,12 +33,12 @@ export class AddPositionComponent implements OnInit {
 
   onSubmit(f:NgForm){
     var pos = parseInt(this.position);
-    for(let i = 0; i < this.ogFiles.length; i++){
-      var temp = this.ogFiles[i].name;
-      if(pos < this.ogFiles[i].name.length){
-        temp = this.ogFiles[i].name.slice(0, pos-1) + this.text + this.ogFiles[i].name.slice(pos, this.ogFiles[i].name.length-1);
+    for(let i = 0; i < this.m.modifiedFiles.length; i++){
+      var temp = this.m.modifiedFiles[i].name;
+      if(pos < this.m.modifiedFiles[i].name.length){
+        temp = this.m.modifiedFiles[i].name.slice(0, pos-1) + this.text + this.m.modifiedFiles[i].name.slice(pos, this.m.modifiedFiles[i].name.length-1);
       }
-      var modFile = this.ogFiles[i];
+      var modFile = this.m.modifiedFiles[i];
       modFile.name = temp;
       this.modFiles.push(modFile);
     }
