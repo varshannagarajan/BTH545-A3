@@ -27,12 +27,13 @@
           [ngModelOptions]="{ standalone: true }"
         />
       </mat-form-field>
-      <mat-checkbox [(ngModel)]="before" [ngModelOptions]="{ standalone: true }"
-        >Before</mat-checkbox
+      <mat-radio-group
+        [(ngModel)]="beforeOrAfter"
+        [ngModelOptions]="{ standalone: true }"
       >
-      <mat-checkbox [(ngModel)]="after" [ngModelOptions]="{ standalone: true }"
-        >After</mat-checkbox
-      >
+        <mat-radio-button [value]="true">Before</mat-radio-button>
+        <mat-radio-button [value]="false">After</mat-radio-button>
+      </mat-radio-group>
       <mat-action-row>
         <button mat-button type="submit">Submit</button>
       </mat-action-row>

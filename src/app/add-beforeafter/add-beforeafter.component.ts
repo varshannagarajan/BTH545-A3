@@ -12,42 +12,36 @@ import { NgForm } from '@angular/forms';
   styles: []
 })
 export class AddBeforeafterComponent implements OnInit {
-  
+
   modFiles: CustomFile[];
   textToAdd: string;
   text: string;
-  before: Boolean;
-  after: Boolean;
+  beforeOrAfter: boolean;
   filename: Boolean;
   ext: Boolean;
 
   constructor(
-    private route: ActivatedRoute,
-    private m: FileService,
-    private router: Router
+    private m: FileService
   ) { }
 
   ngOnInit() {
     this.modFiles = [];
     this.textToAdd = '';
     this.text = '';
-    this.before = false;
-    this.after = false;
+    this.beforeOrAfter = true;
   }
 
-  onSubmit(f: NgForm){
-    
+  onSubmit(f: NgForm) {
     for(let i = 0; i < this.m.modifiedFiles.length; i++){
       let textPosition = this.m.modifiedFiles[i].name.indexOf(this.text);
       let temp = String(this.m.modifiedFiles[i].name);
       if(textPosition != -1){
-        if(this.before){
+        if(this.beforeOrAfter){
           temp = this.m.modifiedFiles[i].name.slice(0, textPosition) + this.textToAdd + this.m.modifiedFiles[i].name.slice(textPosition, (this.m.modifiedFiles[i].name.length - 1));
         }
         else{
           temp = this.m.modifiedFiles[i].name.slice(0, textPosition+this.text.length) + this.textToAdd + this.m.modifiedFiles[i].name.slice(textPosition+this.text.length, (this.m.modifiedFiles[i].name.length - 1));
         }
-        
       }
       var modFile = this.m.modifiedFiles[i];
       modFile.name = temp;
@@ -55,7 +49,6 @@ export class AddBeforeafterComponent implements OnInit {
     }
     this.m.modifiedFiles = this.modFiles;
     console.log(this.m.modifiedFiles);
-    
   }
 
 }

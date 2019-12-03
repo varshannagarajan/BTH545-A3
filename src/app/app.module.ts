@@ -30,7 +30,8 @@ import {
   MatIconModule,
   MatInputModule,
   MatButtonModule,
-  MatSlideToggleModule
+  MatSlideToggleModule,
+  MatRadioModule
 } from '@angular/material';
 import { DisplayOriginalComponent } from './display-original/display-original.component';
 import { DisplayModifiedComponent } from './display-modified/display-modified.component';
@@ -70,7 +71,8 @@ import { FormsModule } from '@angular/forms';
     MatIconModule,
     MatInputModule,
     MatButtonModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
