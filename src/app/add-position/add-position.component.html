@@ -8,15 +8,27 @@
       <mat-icon>icon</mat-icon>
     </mat-panel-description>
   </mat-expansion-panel-header>
-  <mat-action-row>
-      <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
-        <mat-form-field>
-            <input matInput placeholder="Enter Text to be Added: " [(ngModel)]="text"  [ngModelOptions]="{standalone: true}"  class="textToBeChanged">
-        </mat-form-field>
-        <mat-form-field>
-          <input matInput placeholder="Position: " [(ngModel)]="position"  [ngModelOptions]="{standalone: true}"  class="textToBeChanged">
-      </mat-form-field>
-        <button type="submit">Submit</button>
-    </form>
-  </mat-action-row>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Enter Text to be Added: "
+        [(ngModel)]="text"
+        [ngModelOptions]="{ standalone: true }"
+        class="textToBeChanged"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Position: "
+        [(ngModel)]="position"
+        [ngModelOptions]="{ standalone: true }"
+        class="textToBeChanged"
+      />
+    </mat-form-field>
+    <mat-action-row>
+      <button mat-button type="submit">Submit</button>
+    </mat-action-row>
+  </form>
 </mat-expansion-panel>
