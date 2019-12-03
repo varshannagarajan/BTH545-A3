@@ -5,6 +5,7 @@ import { CustomFile } from '../file';
 import { FileService } from '../file.service';
 import { NgForm } from '@angular/forms';
 
+
 @Component({
   selector: 'app-add-beforeafter',
   templateUrl: './add-beforeafter.component.html',
@@ -12,7 +13,6 @@ import { NgForm } from '@angular/forms';
 })
 export class AddBeforeafterComponent implements OnInit {
   
-  ogFiles: CustomFile[];
   modFiles: CustomFile[];
   textToAdd: string;
   text: string;
@@ -28,7 +28,6 @@ export class AddBeforeafterComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.ogFiles = this.m.originalFiles;
     this.modFiles = [];
     this.textToAdd = '';
     this.text = '';
@@ -38,19 +37,19 @@ export class AddBeforeafterComponent implements OnInit {
 
   onSubmit(f: NgForm){
     
-    for(let i = 0; i < this.ogFiles.length; i++){
-      let textPosition = this.ogFiles[i].name.indexOf(this.text);
-      let temp = this.ogFiles[i].name;
+    for(let i = 0; i < this.m.modifiedFiles.length; i++){
+      let textPosition = this.m.modifiedFiles[i].name.indexOf(this.text);
+      let temp = String(this.m.modifiedFiles[i].name);
       if(textPosition != -1){
         if(this.before){
-          temp = this.ogFiles[i].name.slice(0, textPosition) + this.textToAdd + this.ogFiles[i].name.slice(textPosition, (this.ogFiles[i].name.length - 1));
+          temp = this.m.modifiedFiles[i].name.slice(0, textPosition) + this.textToAdd + this.m.modifiedFiles[i].name.slice(textPosition, (this.m.modifiedFiles[i].name.length - 1));
         }
         else{
-          temp = this.ogFiles[i].name.slice(0, textPosition+this.text.length) + this.textToAdd + this.ogFiles[i].name.slice(textPosition+this.text.length, (this.ogFiles[i].name.length - 1));
+          temp = this.m.modifiedFiles[i].name.slice(0, textPosition+this.text.length) + this.textToAdd + this.m.modifiedFiles[i].name.slice(textPosition+this.text.length, (this.m.modifiedFiles[i].name.length - 1));
         }
         
       }
-      var modFile = this.ogFiles[i];
+      var modFile = this.m.modifiedFiles[i];
       modFile.name = temp;
       this.modFiles.push(modFile);
     }

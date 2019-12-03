@@ -26,7 +26,6 @@ export class AddBeginendComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.ogFiles = this.m.originalFiles;
     this.modFiles = [];
     this.text = '';
     this.before = false;
@@ -36,26 +35,26 @@ export class AddBeginendComponent implements OnInit {
   }
 
   onSubmit(f:NgForm){
-    for(let i = 0; i < this.ogFiles.length; i++){
-      let dotPosition = this.ogFiles[i].name.indexOf(".");
-      let temp = this.ogFiles[i].name;
+    for(let i = 0; i < this.m.modifiedFiles.length; i++){
+      let dotPosition = this.m.modifiedFiles[i].name.indexOf(".");
+      let temp = this.m.modifiedFiles[i].name;
       if(this.ext){
         if(this.before){
-          temp = this.ogFiles[i].name.slice(0, dotPosition+1) + this.text + this.ogFiles[i].name.slice(dotPosition+1, (this.ogFiles[i].name.length - 1));
+          temp = this.m.modifiedFiles[i].name.slice(0, dotPosition+1) + this.text + this.m.modifiedFiles[i].name.slice(dotPosition+1, (this.m.modifiedFiles[i].name.length - 1));
         }
         else if(this.after){
-          temp =  this.ogFiles[i].name + this.text;
+          temp =  this.m.modifiedFiles[i].name + this.text;
         }
       }
       else{
         if(this.before){
-          temp = this.text + this.ogFiles[i].name;
+          temp = this.text + this.m.modifiedFiles[i].name;
         }
         else if(this.after){
-          temp = this.ogFiles[i].name.slice(0, dotPosition) + this.text + this.ogFiles[i].name.slice(dotPosition, (this.ogFiles[i].name.length - 1));
+          temp = this.m.modifiedFiles[i].name.slice(0, dotPosition) + this.text + this.m.modifiedFiles[i].name.slice(dotPosition, (this.m.modifiedFiles[i].name.length - 1));
         }
       }
-      var modFile = this.ogFiles[i];
+      var modFile = this.m.modifiedFiles[i];
       modFile.name = temp;
       this.modFiles.push(modFile);
     }
