@@ -1,12 +1,9 @@
 <mat-expansion-panel>
   <mat-expansion-panel-header [style.background-color]="'#8BD14E'">
-    <mat-panel-title>
+    <mat-panel-title [style.color]="'#3D3C48'">
       Add Counter
     </mat-panel-title>
-    <mat-panel-description>
-      Description
-      <mat-icon>icon</mat-icon>
-    </mat-panel-description>
+     
   </mat-expansion-panel-header>
   <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
     <mat-form-field>
