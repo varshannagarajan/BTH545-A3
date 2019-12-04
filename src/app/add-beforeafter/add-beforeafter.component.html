@@ -1,13 +1,9 @@
 <div class="addbeforeafter">
   <mat-expansion-panel>
     <mat-expansion-panel-header [style.background-color]="'#8BD14E'">
-      <mat-panel-title>
+      <mat-panel-title [style.color]="'#3D3C48'">
         Add Before/After
       </mat-panel-title>
-      <mat-panel-description>
-        Text to be added before/after
-        <mat-icon>account_circle</mat-icon>
-      </mat-panel-description>
     </mat-expansion-panel-header>
 
     <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
