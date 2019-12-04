@@ -30,7 +30,7 @@ export class RemovePositionComponent implements OnInit {
     let charsToRemove = parseInt(this.text);
     for(let i = 0; i < this.m.modifiedFiles.length; i++){
       let temp = String(this.m.modifiedFiles[i].name);
-      if(charsToRemove < this.m.modifiedFiles[i].name.length){
+      if(charsToRemove < this.m.modifiedFiles[i].name.length-1){
         if(this.beforeOrAfter){
           temp = this.m.modifiedFiles[i].name.slice(charsToRemove, (this.m.modifiedFiles[i].name.length-1))
         }

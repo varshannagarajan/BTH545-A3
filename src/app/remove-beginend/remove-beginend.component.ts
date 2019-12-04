@@ -30,14 +30,13 @@ export class RemoveBeginendComponent implements OnInit {
   onSubmit(f: NgForm) {
     let charsToRemove = parseInt(this.text);
     for(let i = 0; i < this.m.modifiedFiles.length; i++){
-      let dotPosition = this.m.modifiedFiles[i].name.indexOf('.');
       let temp = String(this.m.modifiedFiles[i].name);
-      if(dotPosition != -1 && dotPosition > charsToRemove){
+      if(this.m.modifiedFiles[i].name.length-1 > charsToRemove){
         if(this.begOrEnd){
           temp = this.m.modifiedFiles[i].name.slice(charsToRemove, (this.m.modifiedFiles[i].name.length - 1));
         }
         else{
-          temp = this.m.modifiedFiles[i].name.slice(0, dotPosition-charsToRemove) + this.m.modifiedFiles[i].name.slice(dotPosition, (this.m.modifiedFiles[i].name.length - 1));
+          temp = this.m.modifiedFiles[i].name.slice(0, (this.m.modifiedFiles[i].name.length - charsToRemove));
         }
       }
       var modFile = this.m.modifiedFiles[i];
