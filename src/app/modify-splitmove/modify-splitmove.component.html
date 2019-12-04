@@ -6,12 +6,18 @@
     <img src="../../assets/swap.png" style="width:25px;height:25px;">
   </mat-expansion-panel-header>
 
-  <mat-form-field>
-    <input matInput placeholder="Text" class="inputValue" />
-  </mat-form-field>
-  <mat-checkbox>Checkbox</mat-checkbox>
-
+  
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Swap text around: "
+        [(ngModel)]="text"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </mat-form-field>
   <mat-action-row>
     <button mat-button>Apply</button>
   </mat-action-row>
+  </form>
 </mat-expansion-panel>
