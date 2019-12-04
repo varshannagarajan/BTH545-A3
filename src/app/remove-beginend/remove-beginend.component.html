@@ -6,12 +6,24 @@
     <img src="../../assets/remove.png" style="width:25px;height:25px;">
   </mat-expansion-panel-header>
 
-  <mat-form-field>
-    <input matInput placeholder="Text" class="inputValue" />
-  </mat-form-field>
-  <mat-checkbox>Checkbox</mat-checkbox>
-
-  <mat-action-row>
-    <button mat-button>Apply</button>
-  </mat-action-row>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Enter Number of characters to be removed: "
+        [(ngModel)]="text"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </mat-form-field>
+    <mat-radio-group
+      [(ngModel)]="begOrEnd"
+      [ngModelOptions]="{ standalone: true }"
+    >
+      <mat-radio-button [value]="true">Beginning</mat-radio-button>
+      <mat-radio-button [value]="false">End</mat-radio-button>
+    </mat-radio-group>
+    <mat-action-row>
+      <button mat-button type="submit">Submit</button>
+    </mat-action-row>
+  </form>
 </mat-expansion-panel>
