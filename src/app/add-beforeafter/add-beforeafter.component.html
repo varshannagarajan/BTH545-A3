@@ -4,6 +4,7 @@
       <mat-panel-title [style.color]="'#3D3C48'">
         Add Before/After
       </mat-panel-title>
+      <img src="../../assets/add.png" style="width:25px;height:25px;">
     </mat-expansion-panel-header>
 
     <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
@@ -31,7 +32,7 @@
         <mat-radio-button [value]="false">After</mat-radio-button>
       </mat-radio-group>
       <mat-action-row>
-        <button mat-button type="submit">Submit</button>
+        <button mat-button type="submit">Apply</button>
       </mat-action-row>
     </form>
   </mat-expansion-panel>
