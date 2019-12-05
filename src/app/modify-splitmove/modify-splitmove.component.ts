@@ -31,7 +31,6 @@ export class ModifySplitmoveComponent implements OnInit {
       let temp = [];
       let temp2 = '';
       
-       
         temp = this.m.modifiedFiles[i].name.split(this.text, 2);
         if(temp[1] != null) 
         temp2 = temp[0] + temp[1];

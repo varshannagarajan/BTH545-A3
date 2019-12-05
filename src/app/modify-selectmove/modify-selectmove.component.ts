@@ -48,46 +48,36 @@ export class ModifySelectmoveComponent implements OnInit {
         if(this.m.modifiedFiles[i].name.includes(this.text) && this.text != null)
         {
            if(this.before){
-            temp = this.m.modifiedFiles[i].name.slice(0, textPosition); 
-
+            temp = this.m.modifiedFiles[i].name.slice(0, textPosition) + this.text; 
+            temp2 = this.m.modifiedFiles[i].name.slice(textPosition2 + this.replaceText.length, (this.m.modifiedFiles[i].name.length));
           }
-
-          if(this.after){
-            temp = this.text + this.m.modifiedFiles[i].name.slice(textPosition+this.text.length, (this.m.modifiedFiles[i].name.length - 1));
+          else{ //MusEtiam, m Etiam u se 
+            temp = this.m.modifiedFiles[i].name.slice(textPosition+this.text.length, (this.m.modifiedFiles[i].name.length));
           }
 
           if(this.moveBefore){
             temp = this.text + temp + this.replaceText;//sapien, ie, ie sap n
-            console.log("Temp2 " + temp2);
           }
-
-          if(this.moveAfter){
-            temp2 = this.replaceText + this.m.modifiedFiles[i].name.slice(textPosition2 + this.replaceText.length, (this.m.modifiedFiles[i].name.length - 1));
-           // temp = temp2 + temp;
-            
+          else{
+            temp2 = this.m.modifiedFiles[i].name.slice(textPosition2+this.replaceText.length, (textPosition));
+            temp = this.replaceText + temp + temp2;
           }
         }
 
         if(this.setPosition != null){
-        
           temp = temp.slice(this.setPosition - 1, this.lastPosition);
-          console.log("SetPosition " + temp) ;
-      }
+        }
 
         if(this.positionMove != null){
-          
-          temp2 = this.m.modifiedFiles[i].name.slice(this.lastPosition, this.positionMove) + temp + this.m.modifiedFiles[i].name.slice(this.positionMove, this.m.modifiedFiles[i].name.length);
-          temp = temp2;
-          console.log("MovePosition " + temp2);
+          temp = this.m.modifiedFiles[i].name.slice(this.lastPosition + temp.length, this.positionMove) + temp 
+          + this.m.modifiedFiles[i].name.slice(this.positionMove, this.m.modifiedFiles[i].name.length);
         }
         
-        console.log(this.positionMove + "" + this.setPosition);
-
         var modFile = this.m.modifiedFiles[i];
         modFile.name = temp;
         this.modFiles.push(modFile);
-
       }
+      
       this.m.modifiedFiles = this.modFiles;
       console.log(this.m.modifiedFiles); 
     }
