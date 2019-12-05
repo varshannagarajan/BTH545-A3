@@ -6,12 +6,69 @@
     <img src="../../assets/swap.png" style="width:25px;height:25px;">
   </mat-expansion-panel-header>
 
-  <mat-form-field>
-    <input matInput placeholder="Text" class="inputValue" />
-  </mat-form-field>
-  <mat-checkbox>Checkbox</mat-checkbox>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+    <mat-radio-group
+      [(ngModel)]="before"
+      [ngModelOptions]="{ standalone: true }"
+    >
+      <mat-radio-button [value]="true">Before</mat-radio-button>
+      <mat-radio-button [value]="false">After</mat-radio-button>
+    </mat-radio-group>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Before or After: "
+        [(ngModel)]="text"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </mat-form-field>
+<br>
+<mat-form-field>
+  <input
+    matInput
+    placeholder="Select from Position: "
+    [(ngModel)]="setPosition"
+    [ngModelOptions]="{ standalone: true }"
+  />
+</mat-form-field>
 
-  <mat-action-row>
-    <button mat-button>Apply</button>
-  </mat-action-row>
+<mat-form-field>
+  <input
+    matInput
+    placeholder="thru: "
+    [(ngModel)]="lastPosition"
+    [ngModelOptions]="{ standalone: true }"
+  />
+</mat-form-field>
+<br>
+    <mat-radio-group
+      [(ngModel)]="moveBefore"
+      [ngModelOptions]="{ standalone: true }"
+    >
+      <mat-radio-button [value]="true">Before</mat-radio-button>
+      <mat-radio-button [value]="false">After</mat-radio-button>
+    </mat-radio-group>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Before or After: "
+        [(ngModel)]="replaceText"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </mat-form-field>
+    <br>
+
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Position: "
+        [(ngModel)]="positionMove"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </mat-form-field>
+
+    <mat-action-row>
+      <button mat-button type="submit">Submit</button>
+    </mat-action-row>
+  </form>
 </mat-expansion-panel>
