@@ -1,83 +1,121 @@
-<div class="row">
-  <div class="col-md-10">
-    <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-4">
-        <mat-checkbox>Select All</mat-checkbox>
+<div class="container-fluid" style="overflow-x:hidden">
+  <div class="left-panel">
+    <div class="col-md-3">
+      <div class="dropHeader">
         <button mat-raised-button>Apply</button>
+        <div class="col-md-8">
+          <mat-checkbox>Select All</mat-checkbox>
+        </div>
       </div>
-      <div class="col-md-6">
-        <mat-form-field>
-          <input matInput placeholder="C:\Desktop" />
-        </mat-form-field>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6"></div>
-      <div class="col-md-4">
-        <mat-slide-toggle>View File Extensions</mat-slide-toggle>
-        <button mat-raised-button>Copy</button>
-        <button mat-raised-button>Move To</button>
-      </div>
-      <div class="col-md-2">
-        <button mat-raised-button>List</button>
-        <button mat-raised-button>Icon</button>
+      <div style="overflow-y: scroll; max-height: 90vh;">
+        <mat-accordion>
+          <app-add-beforeafter></app-add-beforeafter>
+          <app-add-beginend></app-add-beginend>
+          <app-add-counter></app-add-counter>
+          <app-add-position></app-add-position>
+          <app-modify-findreplace></app-modify-findreplace>
+          <app-modify-replacenum></app-modify-replacenum>
+          <app-modify-selectmove></app-modify-selectmove>
+          <app-modify-splitmove></app-modify-splitmove>
+          <app-modify-swap></app-modify-swap>
+          <app-remove-beginend></app-remove-beginend>
+          <app-remove-numwords></app-remove-numwords>
+          <app-remove-position></app-remove-position>
+          <app-regex></app-regex>
+          <app-meta-date></app-meta-date>
+          <app-meta-location></app-meta-location>
+          <app-meta-resolution></app-meta-resolution>
+          <app-meta-time></app-meta-time>
+        </mat-accordion>
       </div>
     </div>
   </div>
-  <div class="col-md-2">
-    <button mat-raised-button>Undo</button>
-    <button mat-raised-button>History</button>
-  </div>
-</div>
 
-<div class="row">
-  <div class="col-md-1"></div>
-  <div class="col-md-4">
-    <mat-accordion>
-      <app-add-beforeafter></app-add-beforeafter>
-      <app-add-beginend></app-add-beginend>
-      <app-add-counter></app-add-counter>
-      <app-add-position></app-add-position>
-      <app-modify-findreplace></app-modify-findreplace>
-      <app-modify-replacenum></app-modify-replacenum>
-      <app-modify-selectmove></app-modify-selectmove>
-      <app-modify-splitmove></app-modify-splitmove>
-      <app-modify-swap></app-modify-swap>
-      <app-remove-beginend></app-remove-beginend>
-      <app-remove-numwords></app-remove-numwords>
-      <app-remove-position></app-remove-position>
-      <app-regex></app-regex>
-      <app-meta-date></app-meta-date>
-      <app-meta-location></app-meta-location>
-      <app-meta-resolution></app-meta-resolution>
-      <app-meta-time></app-meta-time>
-    </mat-accordion>
+  <div class="files">
+    <div class="col-md-7">
+      <div class="row" style="padding: 10px;">
+        <div class="col-md-12">
+          <input matInput placeholder="C:\Desktop\" />
+        </div>
+      </div>
+      <div class="row" style="padding: 5px;">
+        <div class="col-md-4">
+          <mat-slide-toggle>View File Extensions</mat-slide-toggle>
+        </div>
+        <div class="col-md-2">
+          <button mat-raised-button>Move To</button>
+        </div>
+        <div class="col-md-2">
+          <button mat-raised-button>Copy</button>
+        </div>
+        <div class="col-md-4">
+          <button mat-raised-button>List View</button>
+          <button mat-raised-button>Icon View</button>
+        </div>
+      </div>
+      <div class="displayFiles" style="overflow-y:scroll; overflow-x:hidden; max-height: 87vh;">
+        <div class="row" style="background-color: #3D3C48; padding: 10px; border-radius: 15px;">
+          <div class="col-md-6">
+            <app-display-original></app-display-original>
+          </div>
+          <div class="col-md-6">
+            <app-display-modified></app-display-modified>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="displayFiles">
-    <div class="col-md-2">
-      <app-display-original></app-display-original>
-    </div>
-    <div class="col-md-2">
-      <app-display-modified></app-display-modified>
-    </div>
-  </div>
-  <div class="col-md-1">
-    <div class="buttons">
-      <button mat-raised-button>Desktop</button>
-      <button mat-raised-button>Downloads</button>
-      <button mat-raised-button>Documents</button>
-      <button mat-raised-button>Pictures</button>
-    </div>
-    <div class="checkboxes">
-      <mat-checkbox>Select All</mat-checkbox>
-      <mat-checkbox>Show Folders</mat-checkbox>
-      <mat-checkbox>Show Files</mat-checkbox>
-      <mat-checkbox>Rename Files in Folders</mat-checkbox>
-      <mat-checkbox>Filter by File Type</mat-checkbox>
-      <mat-form-field>
-        <input matInput placeholder="e.g. .txt .doc" />
-      </mat-form-field>
+
+  <div class="right-panel">
+    <div class="row" style="padding: 10px;">
+      <div class="col-md-1">
+        <img src="../assets/undo.png" style="width:30px;height:30px;">
+      </div>
+      <div class="col-md-1">
+        <img src="../assets/history.png" style="width:30px;height:30px;">
+      </div>
+      <div class="row" style="padding: 5px;">
+        <div class="col-md-1">
+          <button mat-raised-button>Undo</button>
+        </div>
+        <div class="col-md-1">
+          <button mat-raised-button>History</button>
+        </div>
+        <div class="row">
+          <div class="col-md-1" style="padding: 10px;">
+            <div class="buttons">
+              <button mat-raised-button style="width: 200px; padding: 5px;">Desktop</button>
+              <button mat-raised-button style="width: 200px; padding: 5px;">Downloads</button>
+              <button mat-raised-button style="width: 200px; padding: 5px;">Documents</button>
+              <button mat-raised-button style="width: 200px; padding: 5px;">Pictures</button>
+            </div>
+            <div class="row">
+              <div class="col-md-1" style="padding: 10px;">
+                <div class="checkboxes">
+                  <div class="col-md-1" style="padding: 10px;">
+                    <mat-checkbox>Select All</mat-checkbox>
+                  </div>
+                  <div class="col-md-1" style="padding: 10px;">
+                    <mat-checkbox>Show Folders</mat-checkbox>
+                  </div>
+                  <div class="col-md-1" style="padding: 10px;">
+                    <mat-checkbox>Show Files</mat-checkbox>
+                  </div>
+                  <div class="col-md-1" style="padding: 10px;">
+                    <mat-checkbox>Rename Files in Folders</mat-checkbox>
+                  </div>
+                  <div class="col-md-1" style="padding: 10px;">
+                    <mat-checkbox>Filter by File Type</mat-checkbox>
+                    <mat-form-field>
+                      <input matInput placeholder="e.g. .txt .doc" />
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
