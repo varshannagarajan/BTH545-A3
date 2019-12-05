@@ -1,17 +1,23 @@
-<mat-expansion-panel>
-  <mat-expansion-panel-header [style.background-color]="'#FFF07C'">
-    <mat-panel-title [style.color]="'#3D3C48'">
-      Meta Location
-    </mat-panel-title>
-    <img src="../../assets/meta.png" style="width:25px;height:25px;">
-  </mat-expansion-panel-header>
+<div class="metaloca">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header [style.background-color]="'#FFF07C'">
+      <mat-panel-title [style.color]="'#3D3C48'">
+        Meta Location
+      </mat-panel-title>
+      <img src="../../assets/meta.png" style="width:25px;height:25px;">
+    </mat-expansion-panel-header>
 
-  <mat-form-field>
-    <input matInput placeholder="Text" class="inputValue" />
-  </mat-form-field>
-  <mat-checkbox>Checkbox</mat-checkbox>
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+      <mat-radio-group
+        [(ngModel)]="beforeOrAfter"
+        [ngModelOptions]="{ standalone: true }">
+        <mat-radio-button [value]="true">Before</mat-radio-button>
+        <mat-radio-button [value]="false">After</mat-radio-button>
+      </mat-radio-group>
+      <mat-action-row>
+        <button mat-button type="submit">Apply</button>
+      </mat-action-row>
+    </form>
+  </mat-expansion-panel>
+</div>
 
-  <mat-action-row>
-    <button mat-button>Apply</button>
-  </mat-action-row>
-</mat-expansion-panel>
