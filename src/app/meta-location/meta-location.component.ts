@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Router } from '@angular/router';
 import { CustomFile } from '../file';
 import { FileService } from '../file.service';
 import { NgForm } from '@angular/forms';
@@ -13,10 +11,10 @@ import { NgForm } from '@angular/forms';
 export class MetaLocationComponent implements OnInit {
   modFiles: CustomFile[];
   beforeOrAfter: boolean;
-  filename: Boolean;
-  ext: Boolean;
+  filename: boolean;
+  ext: boolean;
 
-  constructor( private m: FileService) { }
+  constructor(private m: FileService) {}
 
   ngOnInit() {
     this.modFiles = [];
@@ -24,22 +22,21 @@ export class MetaLocationComponent implements OnInit {
   }
 
   onSubmit(f: NgForm) {
-    for(let i = 0; i < this.m.modifiedFiles.length; i++){
+    for (let i = 0; i < this.m.modifiedFiles.length; i++) {
       let temp = String(this.m.modifiedFiles[i].name);
-      let varshanchoice = this.m.modifiedFiles[i].location;
-        if(this.beforeOrAfter){
-          temp = this.m.modifiedFiles[i].name + '_' + varshanchoice;
-        }
-        else{
-          temp = varshanchoice + '_' + this.m.modifiedFiles[i].name;
-        }
+      const varshanchoice = this.m.modifiedFiles[i].location;
 
-      var modFile = this.m.modifiedFiles[i];
+      if (this.beforeOrAfter) {
+        temp = varshanchoice + '_' + this.m.modifiedFiles[i].name;
+      } else {
+        temp = this.m.modifiedFiles[i].name + '_' + varshanchoice;
+      }
+
+      const modFile = this.m.modifiedFiles[i];
       modFile.name = temp;
       this.modFiles.push(modFile);
     }
     this.m.modifiedFiles = this.modFiles;
     console.log(this.m.modifiedFiles);
   }
-
 }
