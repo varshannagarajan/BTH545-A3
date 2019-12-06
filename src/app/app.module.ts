@@ -32,11 +32,13 @@ import {
   MatButtonModule,
   MatSlideToggleModule,
   MatRadioModule,
-  MatTooltipModule
+  MatTooltipModule,
+  MatDialogModule
 } from '@angular/material';
 import { DisplayOriginalComponent } from './display-original/display-original.component';
 import { DisplayModifiedComponent } from './display-modified/display-modified.component';
 import { FormsModule } from '@angular/forms';
+import { TutorialComponent, TutorialContent } from './tutorial/tutorial.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +61,9 @@ import { FormsModule } from '@angular/forms';
     MetaDateComponent,
     MetaResolutionComponent,
     DisplayOriginalComponent,
-    DisplayModifiedComponent
+    DisplayModifiedComponent,
+    TutorialComponent,
+    TutorialContent
   ],
   imports: [
     BrowserModule,
@@ -74,8 +78,10 @@ import { FormsModule } from '@angular/forms';
     MatButtonModule,
     MatSlideToggleModule,
     MatRadioModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatDialogModule
   ],
+  entryComponents: [TutorialComponent, TutorialContent],
   providers: [],
   bootstrap: [AppComponent]
 })
