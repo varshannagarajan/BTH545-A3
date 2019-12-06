@@ -14,9 +14,7 @@ export class ModifySwapComponent implements OnInit {
   text: string;
   replaceText: string;
 
-  constructor(private m: FileService) { 
-  
-  }
+  constructor(private m: FileService) {}
 
   ngOnInit() {
     this.modFiles = [];
@@ -25,11 +23,10 @@ export class ModifySwapComponent implements OnInit {
     }
 
   onSubmit(f: NgForm){
-    
     for(let i = 0; i < this.m.modifiedFiles.length; i++){
       let textPosition = this.m.modifiedFiles[i].name.indexOf(this.text);
       let temp = String(this.m.modifiedFiles[i].name);
-      if(textPosition != -1){  
+      if(textPosition != -1){
          temp = this.m.modifiedFiles[i].name.slice(textPosition + this.text.length, (this.m.modifiedFiles[i].name.length )) + this.text + this.m.modifiedFiles[i].name.slice(0, textPosition);
       }
       var modFile = this.m.modifiedFiles[i];
@@ -37,7 +34,7 @@ export class ModifySwapComponent implements OnInit {
       this.modFiles.push(modFile);
     }
     this.m.modifiedFiles = this.modFiles;
+    this.ngOnInit();
     console.log(this.m.modifiedFiles);
-    
   }
 }

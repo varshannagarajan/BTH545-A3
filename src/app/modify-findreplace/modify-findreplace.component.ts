@@ -14,9 +14,7 @@ export class ModifyFindreplaceComponent implements OnInit {
   text: string;
   replaceText: string;
 
-  constructor(private m: FileService) { 
-  
-  }
+  constructor(private m: FileService) {}
 
   ngOnInit() {
   this.modFiles = [];
@@ -25,7 +23,6 @@ export class ModifyFindreplaceComponent implements OnInit {
   }
 
   onSubmit(f: NgForm){
-    
     for(let i = 0; i < this.m.modifiedFiles.length; i++){
 
       let temp = this.m.modifiedFiles[i].name.replace(this.text, this.replaceText);
@@ -35,6 +32,7 @@ export class ModifyFindreplaceComponent implements OnInit {
       this.modFiles.push(modFile);
     }
     this.m.modifiedFiles = this.modFiles;
-    console.log(this.m.modifiedFiles); 
+    this.ngOnInit();
+    console.log(this.m.modifiedFiles);
   }
 }

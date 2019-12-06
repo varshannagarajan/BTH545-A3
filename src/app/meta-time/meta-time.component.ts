@@ -38,6 +38,7 @@ export class MetaTimeComponent implements OnInit {
       this.modFiles.push(modFile);
     }
     this.m.modifiedFiles = this.modFiles;
+    this.ngOnInit();
     console.log(this.m.modifiedFiles);
   }
 }

@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Router } from '@angular/router';
 import { CustomFile } from '../file';
 import { FileService } from '../file.service';
 import { NgForm } from '@angular/forms';
@@ -17,8 +15,8 @@ export class AddBeforeafterComponent implements OnInit {
   textToAdd: string;
   text: string;
   beforeOrAfter: boolean;
-  filename: Boolean;
-  ext: Boolean;
+  filename: boolean;
+  ext: boolean;
 
   constructor(
     private m: FileService
@@ -48,6 +46,7 @@ export class AddBeforeafterComponent implements OnInit {
       this.modFiles.push(modFile);
     }
     this.m.modifiedFiles = this.modFiles;
+    this.ngOnInit();
     console.log(this.m.modifiedFiles);
   }
 

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { CustomFile } from 'app/file';
-import { ActivatedRoute, Router } from '@angular/router';
 import { FileService } from 'app/file.service';
 import { NgForm } from '@angular/forms';
 
@@ -14,14 +13,12 @@ export class AddPositionComponent implements OnInit {
   ogFiles: CustomFile[];
   modFiles: CustomFile[];
   text: string;
-  before: Boolean;
-  after: Boolean;
+  before: boolean;
+  after: boolean;
   position: string;
 
   constructor(
-    private route: ActivatedRoute,
-    private m: FileService,
-    private router: Router
+    private m: FileService
   ) { }
 
   ngOnInit() {
@@ -42,9 +39,8 @@ export class AddPositionComponent implements OnInit {
       modFile.name = temp;
       this.modFiles.push(modFile);
     }
-    
     this.m.modifiedFiles = this.modFiles;
+    this.ngOnInit();
     console.log(this.m.modifiedFiles);
   }
-
 }

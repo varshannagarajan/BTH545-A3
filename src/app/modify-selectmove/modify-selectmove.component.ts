@@ -19,13 +19,11 @@ export class ModifySelectmoveComponent implements OnInit {
   moveAfter: boolean;
   position: boolean;
   setPosition: number;
-  lastPosition:number;
+  lastPosition: number;
   position3: boolean;
   positionMove: number;
 
-  constructor(private m: FileService) { 
-  
-  }
+  constructor(private m: FileService) {}
 
   ngOnInit() {
     this.modFiles = [];
@@ -38,7 +36,6 @@ export class ModifySelectmoveComponent implements OnInit {
     }
 
     onSubmit(f: NgForm){
-    
       for(let i = 0; i < this.m.modifiedFiles.length; i++){
         let textPosition = this.m.modifiedFiles[i].name.indexOf(this.text);
         let textPosition2 = this.m.modifiedFiles[i].name.indexOf(this.replaceText);
@@ -48,10 +45,10 @@ export class ModifySelectmoveComponent implements OnInit {
         if(this.m.modifiedFiles[i].name.includes(this.text) && this.text != null)
         {
            if(this.before){
-            temp = this.m.modifiedFiles[i].name.slice(0, textPosition) + this.text; 
+            temp = this.m.modifiedFiles[i].name.slice(0, textPosition) + this.text;
             temp2 = this.m.modifiedFiles[i].name.slice(textPosition2 + this.replaceText.length, (this.m.modifiedFiles[i].name.length));
           }
-          else{ //MusEtiam, m Etiam u se 
+          else{ //MusEtiam, m Etiam u se
             temp = this.m.modifiedFiles[i].name.slice(textPosition+this.text.length, (this.m.modifiedFiles[i].name.length));
           }
 
@@ -69,16 +66,15 @@ export class ModifySelectmoveComponent implements OnInit {
         }
 
         if(this.positionMove != null){
-          temp = this.m.modifiedFiles[i].name.slice(this.lastPosition + temp.length, this.positionMove) + temp 
+          temp = this.m.modifiedFiles[i].name.slice(this.lastPosition + temp.length, this.positionMove) + temp
           + this.m.modifiedFiles[i].name.slice(this.positionMove, this.m.modifiedFiles[i].name.length);
         }
-        
         var modFile = this.m.modifiedFiles[i];
         modFile.name = temp;
         this.modFiles.push(modFile);
       }
-      
       this.m.modifiedFiles = this.modFiles;
-      console.log(this.m.modifiedFiles); 
+      this.ngOnInit();
+      console.log(this.m.modifiedFiles);
     }
 }
