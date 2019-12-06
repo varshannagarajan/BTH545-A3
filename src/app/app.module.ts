@@ -39,6 +39,7 @@ import { DisplayOriginalComponent } from './display-original/display-original.co
 import { DisplayModifiedComponent } from './display-modified/display-modified.component';
 import { FormsModule } from '@angular/forms';
 import { TutorialComponent, TutorialContent } from './tutorial/tutorial.component';
+import { ResetComponent } from './reset/reset.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { TutorialComponent, TutorialContent } from './tutorial/tutorial.componen
     DisplayOriginalComponent,
     DisplayModifiedComponent,
     TutorialComponent,
-    TutorialContent
+    TutorialContent,
+    ResetComponent
   ],
   imports: [
     BrowserModule,
