@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Router } from '@angular/router';
 import { CustomFile } from '../file';
 import { FileService } from '../file.service';
 import { NgForm } from '@angular/forms';
@@ -13,8 +11,8 @@ import { NgForm } from '@angular/forms';
 export class MetaTimeComponent implements OnInit {
   modFiles: CustomFile[];
   beforeOrAfter: boolean;
-  filename: Boolean;
-  ext: Boolean;
+  filename: boolean;
+  ext: boolean;
 
   constructor(private m: FileService) { }
 
@@ -23,19 +21,19 @@ export class MetaTimeComponent implements OnInit {
     this.beforeOrAfter = true;
   }
   onSubmit(f: NgForm) {
-    for(let i = 0; i < this.m.modifiedFiles.length; i++){
+    for (let i = 0; i < this.m.modifiedFiles.length; i++) {
       let temp = String(this.m.modifiedFiles[i].name);
-      let varshanchoice = this.m.modifiedFiles[i].date;
-      let time = varshanchoice.split("T");
-      let updatedTime = time[1].split(":");
-        if(this.beforeOrAfter){
-          temp = this.m.modifiedFiles[i].name + '_' + updatedTime[0]+ '_' + updatedTime[1] + '_' + updatedTime[2];
-        }
-        else{
-          temp = updatedTime[0]+ '_' + updatedTime[1] + '_' + updatedTime[2]; + '_' + this.m.modifiedFiles[i].name;
-        }
+      const varshanchoice = this.m.modifiedFiles[i].date;
+      const time = varshanchoice.split('T');
+      const updatedTime = time[1].split(':');
 
-      var modFile = this.m.modifiedFiles[i];
+      if (this.beforeOrAfter) {
+        temp = updatedTime[0] + '_' + updatedTime[1] + '_' + updatedTime[2] + '_' + this.m.modifiedFiles[i].name;
+      } else {
+        temp = this.m.modifiedFiles[i].name + '_' + updatedTime[0] + '_' + updatedTime[1] + '_' + updatedTime[2];
+      }
+
+      let modFile = this.m.modifiedFiles[i];
       modFile.name = temp;
       this.modFiles.push(modFile);
     }

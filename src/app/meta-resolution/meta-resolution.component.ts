@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Router } from '@angular/router';
 import { CustomFile } from '../file';
 import { FileService } from '../file.service';
 import { NgForm } from '@angular/forms';
@@ -13,8 +11,8 @@ import { NgForm } from '@angular/forms';
 export class MetaResolutionComponent implements OnInit {
   modFiles: CustomFile[];
   beforeOrAfter: boolean;
-  filename: Boolean;
-  ext: Boolean;
+  filename: boolean;
+  ext: boolean;
 
   constructor( private m: FileService) { }
 
@@ -24,19 +22,18 @@ export class MetaResolutionComponent implements OnInit {
   }
 
   onSubmit(f: NgForm) {
-    for(let i = 0; i < this.m.modifiedFiles.length; i++){
+    for (let i = 0; i < this.m.modifiedFiles.length; i++) {
       let temp = String(this.m.modifiedFiles[i].name);
-      let varshanchoice = this.m.modifiedFiles[i]["x-resolution"];
-      let varshansmells = this.m.modifiedFiles[i]["y-resolution"];
+      const varshanchoice = this.m.modifiedFiles[i]['x-resolution'];
+      const varshansmells = this.m.modifiedFiles[i]['y-resolution'];
 
-        if(this.beforeOrAfter){
-          temp = this.m.modifiedFiles[i].name + '_' + varshanchoice + "x" + varshansmells;
-        }
-        else{
-          temp = varshanchoice + "x" + varshansmells + '_' + this.m.modifiedFiles[i].name;
-        }
+      if (this.beforeOrAfter) {
+        temp = varshanchoice + 'x' + varshansmells + '_' + this.m.modifiedFiles[i].name;
+      } else {
+        temp = this.m.modifiedFiles[i].name + '_' + varshanchoice + 'x' + varshansmells;
+      }
 
-      var modFile = this.m.modifiedFiles[i];
+      let modFile = this.m.modifiedFiles[i];
       modFile.name = temp;
       this.modFiles.push(modFile);
     }
