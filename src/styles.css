@@ -19,3 +19,6 @@ body {
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
 
+.mat-tooltip {
+  font-size: 14px !important;
+}

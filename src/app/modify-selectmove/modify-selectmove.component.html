@@ -6,6 +6,7 @@
     <img src="../../assets/swap.png" style="width:25px;height:25px;">
   </mat-expansion-panel-header>
 
+  <h4>Select From</h4>
   <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
     <mat-radio-group
       [(ngModel)]="before"
@@ -14,6 +15,7 @@
       <mat-radio-button [value]="true">Before</mat-radio-button>
       <mat-radio-button [value]="false">After</mat-radio-button>
     </mat-radio-group>
+    <br>
     <mat-form-field>
       <input
         matInput
@@ -27,7 +29,7 @@
   <input
     matInput
     type="number"
-    placeholder="Select from Position: "
+    placeholder="Enter Positon from: "
     [(ngModel)]="setPosition"
     [ngModelOptions]="{ standalone: true }"
   />
@@ -37,12 +39,13 @@
   <input
     matInput
     type="number"
-    placeholder="thru: "
+    placeholder="until positon:  "
     [(ngModel)]="lastPosition"
     [ngModelOptions]="{ standalone: true }"
   />
 </mat-form-field>
 <br>
+<h4>Move To</h4>
     <mat-radio-group
       [(ngModel)]="moveBefore"
       [ngModelOptions]="{ standalone: true }"
@@ -50,6 +53,7 @@
       <mat-radio-button [value]="true">Before</mat-radio-button>
       <mat-radio-button [value]="false">After</mat-radio-button>
     </mat-radio-group>
+    <br>
     <mat-form-field>
       <input
         matInput
