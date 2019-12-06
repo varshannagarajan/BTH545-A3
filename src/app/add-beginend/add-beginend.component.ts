@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { CustomFile } from 'app/file';
-import { ActivatedRoute, Router } from '@angular/router';
 import { FileService } from 'app/file.service';
 import { NgForm } from '@angular/forms';
 
@@ -15,8 +14,8 @@ export class AddBeginendComponent implements OnInit {
   modFiles: CustomFile[];
   text: string;
   beforeOrAfter: boolean;
-  filename: Boolean;
-  ext: Boolean;
+  filename: boolean;
+  ext: boolean;
 
   constructor(
     private m: FileService
@@ -52,8 +51,7 @@ export class AddBeginendComponent implements OnInit {
       this.modFiles.push(modFile);
     }
     this.m.modifiedFiles = this.modFiles;
-    this.modFiles = [];
+    this.ngOnInit();
     console.log(this.m.modifiedFiles);
   }
-
 }

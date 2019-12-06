@@ -14,8 +14,8 @@ export class RemoveBeginendComponent implements OnInit {
   textToAdd: string;
   text: string;
   begOrEnd: boolean;
-  filename: Boolean;
-  ext: Boolean;
+  filename: boolean;
+  ext: boolean;
 
   constructor(
     private m: FileService
@@ -44,7 +44,7 @@ export class RemoveBeginendComponent implements OnInit {
       this.modFiles.push(modFile);
     }
     this.m.modifiedFiles = this.modFiles;
+    this.ngOnInit();
     console.log(this.m.modifiedFiles);
   }
-
 }

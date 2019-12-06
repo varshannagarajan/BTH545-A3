@@ -30,7 +30,7 @@ export class AddCounterComponent implements OnInit {
     var s = num + '';
     while (s.length < size) s = '0' + s;
     return s;
-}
+  }
 
   onSubmit(f:NgForm) {
     var pad = parseInt(this.padding);
@@ -55,6 +55,7 @@ export class AddCounterComponent implements OnInit {
       this.modFiles.push(modFile);
     }
     this.m.modifiedFiles = this.modFiles;
+    this.ngOnInit();
     console.log(this.m.modifiedFiles);
   }
 }

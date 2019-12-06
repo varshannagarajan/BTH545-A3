@@ -16,9 +16,7 @@ export class ModifyReplacenumComponent implements OnInit {
   right: boolean;
   left: boolean;
 
-  constructor(private m: FileService) { 
-  
-  }
+  constructor(private m: FileService) {}
 
   ngOnInit() {
     this.modFiles = [];
@@ -26,7 +24,6 @@ export class ModifyReplacenumComponent implements OnInit {
     }
 
     onSubmit(f: NgForm){
-    
       for(let i = 0; i < this.m.modifiedFiles.length; i++){
           let temp = this.m.modifiedFiles[i].name;
 
@@ -41,6 +38,7 @@ export class ModifyReplacenumComponent implements OnInit {
         this.modFiles.push(modFile);
       }
       this.m.modifiedFiles = this.modFiles;
-      console.log(this.m.modifiedFiles); 
+      this.ngOnInit();
+      console.log(this.m.modifiedFiles);
     }
 }
